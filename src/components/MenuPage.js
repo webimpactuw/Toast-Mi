@@ -4,7 +4,7 @@ export default function MenuPage(props) {
 
     return (
         <div>
-            
+            Menu Page
         </div>
     )
 }
