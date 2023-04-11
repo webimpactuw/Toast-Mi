@@ -5,22 +5,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavLink} from 'react-router-dom';
 
 export default function Header() {
-
+    const navList = ["About", "Menu", "Order"];
+    const navButtons = navList.map((navName) => {
+        const component = (
+            <li key={navName} className="nav-item">
+                 <a className="nav-link active" href="/{navName}">{navName}</a>
+            </li>);
+        return component;
+    })
 
     return (
         <div className="container">
             <div className='row pt-2'>
                 <ul className="nav justify-content-center align-items-center ">
                     <div className='nav col-3 align-middle '>
-                    <li className="nav-item">
-                        <a className="nav-link active" href="/about">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/menu">Menu</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/order">Order</a>
-                    </li>
+                        {navButtons}
                     </div>
                     <li className='nav-item col-2 justify-content-center'>
                         <a href="/">
@@ -30,9 +29,8 @@ export default function Header() {
                         height="80"
                         className="d-inline-block align-middle"
                         alt="logo image"
-                    />
+                        />
                         </a>
-
                     </li>
                     <div className='nav col-3 justify-content-center'>
                     <li className="nav-item">
