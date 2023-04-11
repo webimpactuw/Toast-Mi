@@ -11,7 +11,6 @@ import About from './AboutPage.js';
 function App() {
   return (
     <div className="App">
-      <Button variant="primary">Primary</Button>
       <Header/>
       <Routes>
           <Route path='menu' element={<Menu/>} ></Route>
