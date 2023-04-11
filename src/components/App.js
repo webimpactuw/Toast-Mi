@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
-import Button from 'react-bootstrap/Button';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Header.js';
 import Footer from './Footer.js';
@@ -14,7 +13,7 @@ function App() {
       <Header/>
       <Routes>
           <Route path='menu' element={<Menu/>} ></Route>
-          <Route index element={<Home />} ></Route>
+          <Route index element={<Home/>} ></Route>
           <Route path='order' element={<Order />} ></Route>
           <Route path='about' element={<About />} ></Route>
         </Routes>
