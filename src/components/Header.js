@@ -9,7 +9,7 @@ export default function Header() {
     const navButtons = navList.map((navName) => {
         const component = (
             <li key={navName} className="nav-item">
-                 <a className="nav-link active" href="/{navName}">{navName}</a>
+                 <a className="nav-link active" href={"/"+navName}>{navName}</a>
             </li>);
         return component;
     })
