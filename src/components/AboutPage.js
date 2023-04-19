@@ -6,6 +6,8 @@ import "../AboutPage.css";
 export default function AboutPage(props) {
     return (
         <div class="parent">
+            <p className="sloganDescription">hi hello hi hello hi hello hello hi hello hi hello hi hello hi hello hi hello hi</p>
+            <p className="familyHistoryDescription">hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello</p>
             <img
                 src="./pics/tomato.png"
                 alt="tomato"
@@ -27,6 +29,12 @@ export default function AboutPage(props) {
             <div className="smallGreenCircle"></div>
             <div className="smallOrangeCircle"></div>
             <div className="lowBlueCircle"></div>
+            <p className="y">y</p>
+            <p className="u">u</p>
+            <p className="m">m</p>
+            <p className="y2">y</p>
+            <p className="u2">u</p>
+            <p className="m2">m</p>
             <div className="bigOrangeCircle"></div>
             <div className="orangeCircle"></div>
             <img 
@@ -40,6 +48,7 @@ export default function AboutPage(props) {
                 className="girl"
             />
             <div className="ellipse"></div>
+            <p className="slogan">slogan/ fun fact</p>
             <div className="Rectangle"></div>
         </div>
     )
