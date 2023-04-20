@@ -8,17 +8,18 @@ import Home from './HomePage.js';
 import Menu from './MenuPage.js';
 import Order from './OrderPage.js';
 import About from './AboutPage.js';
+
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Routes>
-          <Route path='menu' element={<Menu/>} ></Route>
-          <Route index element={<Home/>} ></Route>
-          <Route path='order' element={<Order />} ></Route>
-          <Route path='about' element={<About />} ></Route>
-        </Routes>
-        <Footer/>
+        <Route path='menu' element={<Menu />} ></Route>
+        <Route index element={<Home />} ></Route>
+        <Route path='order' element={<Order />} ></Route>
+        <Route path='about' element={<About />} ></Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }

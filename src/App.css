@@ -36,8 +36,6 @@
     transform: rotate(360deg);
   }
 }
-
-/* CSS for Order Page below */
 .header {
   text-align: center;
   background-image: url(../public/pics/orderBanner.png);
@@ -105,6 +103,7 @@
   font-size: 400%;
   padding-top: 5%;
 }
+
 
 .innerWhiteBox > p {
   font-family: 'Baloo Bhai 2', cursive;
