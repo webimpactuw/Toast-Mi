@@ -22,3 +22,8 @@ a:active { text-decoration: none; }
         display: none !important;
     }
   }
+
+.footer-container{
+    background-color: #BC8F5A;
+    
+}

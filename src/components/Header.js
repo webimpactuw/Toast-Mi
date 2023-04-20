@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 export default function Header() {
     const navList = ["About", "Menu", "Order"];
     const navButtons = navList.map((navName) => {
@@ -10,7 +10,31 @@ export default function Header() {
             </li>);
         return component;
     })
+    const socials = (<div className='nav justify-content-center'>
+        <li className="nav-item pt-2 px-1">
+            <a href="">
+                <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
 
+            </a>
+        </li>
+        <li className="nav-item pt-2 px-1">
+            <a href="https://www.facebook.com/people/Toast-Mi/100063613930385/">
+                <img className="nav-icon" src={'pics/facebook.svg'} alt='' />
+
+            </a>
+        </li>
+        <li className="nav-item pt-2 px-1">
+            <a href="https://www.yelp.com/biz/toast-mi-tacoma">
+                <img className="nav-icon" src={'pics/yelp.svg'} alt='' />
+
+            </a>
+        </li>
+        <li className="nav-item pt-2 px-1">
+            <a href="mailto:test@gmail.com">
+                <img className="nav-icon" src={'pics/email.svg'} alt='' />
+            </a>
+
+        </li></div>);
     return (
         <div >
             <div className='large-header row pt-2 '>
@@ -33,30 +57,7 @@ export default function Header() {
                         <li className="nav-item">
                             <a className="nav-link active">Follow us!</a>
                         </li>
-                        <li className="nav-item pt-2 px-1">
-                            <a href="">
-                                <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
-
-                            </a>
-                        </li>
-                        <li className="nav-item pt-2 px-1">
-                            <a href="https://www.facebook.com/people/Toast-Mi/100063613930385/">
-                                <img className="nav-icon" src={'pics/facebook.svg'} alt='' />
-
-                            </a>
-                        </li>
-                        <li className="nav-item pt-2 px-1">
-                            <a href="https://www.yelp.com/biz/toast-mi-tacoma">
-                                <img className="nav-icon" src={'pics/yelp.svg'} alt='' />
-
-                            </a>
-                        </li>
-                        <li className="nav-item pt-2 px-1">
-                            <a href="mailto:test@gmail.com">
-                                <img className="nav-icon" src={'pics/email.svg'} alt='' />
-                            </a>
-
-                        </li>
+                        {socials}
                     </div>
 
                 </ul>
