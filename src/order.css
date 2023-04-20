@@ -1,0 +1,43 @@
+.header {
+    text-align: center;
+    background-image: url(../public/pics/orderBanner.png);
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Gluten', cursive;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 40px;
+}
+
+.outerBox{
+    /* margin-top: 100px;
+    margin-left: 100px; */
+    margin: 100px;
+    background-color: #DFECA4;
+    
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+
+.outerBox::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+.images {
+    margin-left: 100px;
+    /* align-content: center; */
+    text-align: center;
+}
