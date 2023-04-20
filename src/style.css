@@ -6,3 +6,19 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+
+@media screen and (max-width: 968px) {
+    .large-header{
+      display: none !important;
+    }
+
+
+  
+    
+  }
+
+  @media screen and (min-width: 968px) {
+    .small-header{
+        display: none !important;
+    }
+  }
