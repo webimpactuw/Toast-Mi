@@ -6,6 +6,10 @@ import "../AboutPage.css";
 export default function AboutPage(props) {
     return (
         <div class="parent">
+            <div className="leftCircle"></div>
+            <div className="middleCircle"></div>
+            <div className="rightCircle"></div>
+            <p className="popularItems">popular items</p>
             <p className="sloganDescription">hi hello hi hello hi hello hello hi hello hi hello hi hello hi hello hi hello hi</p>
             <p className="familyHistoryDescription">hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello</p>
             <img
