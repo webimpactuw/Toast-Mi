@@ -32,10 +32,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .header {
   text-align: center;
   background-image: url(../public/pics/orderBanner.png);
@@ -55,7 +57,7 @@
   padding-top: 3%;
 }
 
-.greenBox{
+.greenBox {
   /* margin-top: 100px;
   margin-left: 100px; */
   margin: 3%;
@@ -100,14 +102,14 @@
   margin-left: 2.5%;
 }
 
-.innerWhiteBox > h3 {
+.innerWhiteBox>h3 {
   font-family: 'Gluten', cursive;
   font-size: 400%;
   padding-top: 5%;
 }
 
 
-.innerWhiteBox > p {
+.innerWhiteBox>p {
   font-family: 'Baloo Bhai 2', cursive;
   font-size: 150%;
 }
@@ -150,8 +152,8 @@
   font-family: 'Baloo Bhai 2', cursive;
 }
 
-.websiteNames > p > a {
-  color:#282c34
+.websiteNames>p>a {
+  color: #282c34
 }
 
 .dottedLine {
@@ -168,4 +170,71 @@
 /* From bootstrap? */
 p {
   margin-bottom: 0;
+}
+
+
+/* MENU */
+
+.menu-header {
+  font-family: 'Gluten';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 88px;
+
+  /* padding-top: 15%;
+  padding-left: 17%; */
+
+  /* position: absolute;
+  left: 17%;
+  top: 15%; */
+}
+
+.test {
+  margin-top: 15%;
+  /* margin-left: 17%; */
+  /* margin-left: 130px; */
+}
+
+.img-col img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.header-box {
+  height: 250px;
+}
+
+.menu-chunk h2 {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 81px;
+  text-decoration-line: underline;
+  color: #BC8F5A;
+}
+
+.menu-chunk span {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 65px;
+  color: #BC8F5A;
+}
+
+.menu-chunk ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.menu-chunk li {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 62px;
+  margin-left: 50px;
 }
