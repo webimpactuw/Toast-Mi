@@ -10,7 +10,7 @@ export default function Footer(props) {
         return component;
     })
 
-    const socials = (<ul className='justify-content-center nav'>
+    const socials = (<ul className='justify-content-start nav'>
         <li className="nav-item pt-2 px-1">
             <a href="">
                 <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
@@ -49,7 +49,7 @@ export default function Footer(props) {
             <div className='row' >
                 <div className='col logo'>
                     {logo}
-                    {socials}
+
                 </div>
                 <div className='col links'>
                     <ul className='list-inline'>
@@ -57,15 +57,25 @@ export default function Footer(props) {
                     </ul>
 
                 </div>
-                <div className='col  tacoma'>
-                    <div className='row justify-content-center'>Tacoma</div>
-                    <div className='row justify-content-center'>(253)-245-2246</div>
-                    <div className='row justify-content-center'>email</div>
+                <div className='col justify-content-center tacoma'>
+                    <div className='text-start'>Tacoma</div>
+                    <div className='text-start'>(253)-245-2246</div>
+                    <div className='text-start'>7130 Woodlawn Ave NE </div>
+                    <div className='text-start'>Seattle, WA 98115</div>
                 </div>
-                <div className='col greenlake'>
-                    <div className='row justify-content-center'>Greenlake</div>
-                    <div className='row justify-content-center'>(253)-245-2246</div>
-                    <div className='row justify-content-center'>email</div>
+                <div className='col justify-content-center greenlake'>
+                    <div className='text-start justify-content-center '>Greenlake</div>
+                    <div className='text-start'>(253)-245-2246</div>
+                    <div className='text-start'>2602 N Proctor St Suite D</div>
+                    <div className='text-start'>Tacoma, WA 98407</div>
+
+                </div>
+                <div className='col justify-content-center'>
+                    <div>
+                        <p className='text-start fw-bold'>Hours:</p>
+                        <p className='text-start'>open daily// 11:00am - 6:00pm</p>
+                        {socials}
+                    </div>
                 </div>
 
             </div>
