@@ -72,9 +72,10 @@ export default function OrderPage(props) {
                                 {/* Receipt Effect */}
 
                                 <p>Thank  you  for  visiting!</p>
-                                <a href='https://www.google.com/maps/place/Toast+Mi+Tacoma/@47.2713449,-122.4918014,17z/data=!3m2!4b1!5s0x549054ef2265017d:0x1cc5da800182baa4!4m6!3m5!1s0x5490555380efde05:0x9285e2e7a142ae!8m2!3d47.2713449!4d-122.4892265!16s%2Fg%2F11hf9slg_3' target='_blank'>
+                                {/* <a href='https://www.google.com/maps/place/Toast+Mi+Tacoma/@47.2713449,-122.4918014,17z/data=!3m2!4b1!5s0x549054ef2265017d:0x1cc5da800182baa4!4m6!3m5!1s0x5490555380efde05:0x9285e2e7a142ae!8m2!3d47.2713449!4d-122.4892265!16s%2Fg%2F11hf9slg_3' target='_blank'>
                                     <img src="pics/tacomaMap.png"></img>
-                                </a>
+                                </a> */}
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.1999933594566!2d-122.4892265!3d47.271344899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490555380efde05%3A0x9285e2e7a142ae!2sToast%20Mi%20Tacoma!5e0!3m2!1sen!2sus!4v1683159430837!5m2!1sen!2sus" width="400" height="300" styles="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <img src="pics/logo.jpg" className='bottomLogo'></img>
                             </div>
                         </div>
@@ -128,9 +129,10 @@ export default function OrderPage(props) {
                                 {/* Receipt Effect */}
 
                                 <p>Thank  you  for  visiting!</p>
-                                <a href='https://www.google.com/maps/place/Toast+Mi+Green+Lake/@47.6802528,-122.3270411,17z/data=!3m1!4b1!4m6!3m5!1s0x549015db737bb9c7:0x88904a12f4e8e731!8m2!3d47.6802528!4d-122.3244662!16s%2Fg%2F11t5q7xhj9' target='_blank'>
+                                {/* <a href='https://www.google.com/maps/place/Toast+Mi+Green+Lake/@47.6802528,-122.3270411,17z/data=!3m1!4b1!4m6!3m5!1s0x549015db737bb9c7:0x88904a12f4e8e731!8m2!3d47.6802528!4d-122.3244662!16s%2Fg%2F11t5q7xhj9' target='_blank'>
                                    <img src="pics/greenlakeMap.png"></img> 
-                                </a>
+                                </a> */}
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.2145689734325!2d-122.32704112289025!3d47.68025277119679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015db737bb9c7%3A0x88904a12f4e8e731!2sToast%20Mi%20Green%20Lake!5e0!3m2!1sen!2sus!4v1683160138237!5m2!1sen!2sus" width="400" height="300" styles="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <img src="pics/logo.jpg" className='bottomLogo'></img>
                                 
                             </div>
