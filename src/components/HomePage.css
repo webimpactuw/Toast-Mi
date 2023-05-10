@@ -7,11 +7,6 @@
     background-size: cover;
 }
 
-#temp {
-    padding-top: 50px;
-    padding-left: 10.5%;
-}
-
 .header-text {
     text-align: left;
     font-family: 'Inter';
@@ -32,6 +27,7 @@
 #row {
     margin-left: 5.5%;
     padding-bottom: 50px;
+    margin-right: 15.5%;
 }
 
 .slogan-text {
@@ -87,11 +83,12 @@
 }
 
 #main {
-    margin-top: -900%;
+    margin-top: -1000%;
 }
 
 .menu-text {
-    margin-left: -3.25%;
+    margin-left: 5.5%;
+    margin-right: -10.5%;
     text-align: center;
     align-items: center;
     font-family: 'Gluten';
@@ -100,18 +97,23 @@
     font-size: 48px;
     line-height: 42px;
     color: #99352E;
+    margin-bottom: 20px;
+}
+
+#food-pics {
+    margin-right: -10.5%;
 }
 
 #drink {
-    margin-right: -30%;
+    margin-left: 15%;
 }
 
 #plate {
-    margin-left: -75%;
+    margin-right: 20%;
 }
 
 .menu-button {
-    margin-left: -3.25%;
+    margin-right: -10.5%;
     width: 350px;
     background-color: white;
     border-width: 2px;
@@ -147,4 +149,46 @@
     line-height: 24px;
     color: #000000;
     padding-top: 10px;
+}
+
+.kodfun-galeri {
+    margin-left: 5.5%;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri > div {
+    background-image: url(../../public/pics/main-bahnmi.png);
+    flex: 0.5;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.kodfun-galeri > div:hover {
+    flex: 1.25;
+}
+
+#pic1 {
+    background-image: url(../../public/pics/instagram1.png);
+}
+
+#pic2 {
+    background-image: url(../../public/pics/instagram2.png);
+}
+
+#pic3 {
+    background-image: url(../../public/pics/instagram3.png);
+}
+
+#pic4 {
+    padding-right: -3.5%;
+    background-image: url(../../public/pics/instagram4.png);
+}
+
+.about-us-button:hover,.menu-button:hover {
+    background-color: rgba(248, 248, 234, 0.61);    
 }

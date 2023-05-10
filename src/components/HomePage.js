@@ -34,13 +34,13 @@ export default function HomePage(props) {
 
                 <div className="row" id="row">
                     <h1 class="menu-text">Find Something for you!</h1>
-                    <div className="col">
+                    <div className="col" id='food-pics'>
                         <img src="./pics/homepage-drinks.png" id="drink"/>
                     </div>
-                    <div className="col">
-                        <img src="./pics/homepage-bahn-mi.png"/>
+                    <div className="col" id='food-pics'>
+                        <img src="./pics/homepage-bahn-mi.png" id="bahn-mi"/>
                     </div>
-                    <div className="col" id="menu">
+                    <div className="col" id='food-pics'>
                         <img src="./pics/homepage-plate.png" id="plate"/>
                     </div>
                 </div>
@@ -51,7 +51,16 @@ export default function HomePage(props) {
 
                 <div className="row" id="row">
                     <h1 class="socials-text">Keep Up With Us!</h1>
-                    <h2 class="instagram-text">@toastmiplease</h2>
+                    <a href="https://instagram.com/toastmiplease"><h2 class="instagram-text">@toastmiplease</h2></a>
+                </div>
+
+                <div className="row" id="row">
+                    <div class="kodfun-galeri">
+                        <div id="pic1"></div>
+                        <div id="pic2"></div>
+                        <div id="pic3"></div>
+                        <div id="pic4"></div>
+                    </div>
                 </div>
             </div>
         </div>
