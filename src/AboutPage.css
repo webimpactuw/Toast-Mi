@@ -14,7 +14,7 @@
 }
 
 #greenBlock {
-    width: 1522px;
+    width: 100%;
     height: 701px;
 
     background: rgba(207, 237, 184, 0.53);
@@ -79,7 +79,9 @@
     z-index: 4;
 }
 
-
+#familyHistory{
+    position: relative;
+}
 #familyHistory > p {
     width: 65%;
     height: 189px;
@@ -160,6 +162,8 @@
     top: 2018px;
     margin-left: 38%;
     margin-top: -35%;
+    
+
 
     font-family: 'Gluten';
     font-style: normal;
