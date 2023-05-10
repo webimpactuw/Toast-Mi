@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+.header {
+    background-image: url(../../public/pics/main-bahnmi.png);
+    color: white;   
+    background-size: cover;
+}
+
+#temp {
+    padding-top: 50px;
+    padding-left: 10.5%;
+}
+
+.header-text {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+}
+
+.box {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background: rgba(248, 248, 234, 0.61);
+    box-shadow: 6px 36px 28px rgba(0, 0, 0, 0.25);
+}
+
+#row {
+    margin-left: 5.5%;
+    padding-bottom: 50px;
+}
+
+.slogan-text {
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+    color: #99352E;
+} 
+
+#firstBox {
+    margin-top: 75px;
+    text-align: left;
+}
+
+.welcome-text {
+    font-family: 'Gluten', cursive;   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 42px;
+    color: #4D7B41;
+}
+
+.paragraph-text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    margin-top: 30px;
+    color: #000000;
+}
+
+.about-us-button {
+    width: 150px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 41px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #4D7B41;
+}
+
+#secondBox {
+    width: 10%;
+}
+
+#main {
+    margin-top: -900%;
+}
+
+.menu-text {
+    margin-left: -3.25%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 42px;
+    color: #99352E;
+}
+
+#drink {
+    margin-right: -30%;
+}
+
+#plate {
+    margin-left: -75%;
+}
+
+.menu-button {
+    margin-left: -3.25%;
+    width: 350px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 41px;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #99352E;
+}
+
+.socials-text {
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.instagram-text {
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 10px;
+}
