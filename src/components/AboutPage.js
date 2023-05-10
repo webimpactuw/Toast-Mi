@@ -6,6 +6,7 @@ import "../AboutPage.css";
 export default function AboutPage(props) {
     return (
         <div class="parent">
+            {/* <div className="drinkShadow"></div>
             <div className="leftCircle"></div>
             <div className="middleCircle"></div>
             <div className="rightCircle"></div>
@@ -52,8 +53,50 @@ export default function AboutPage(props) {
                 className="girl"
             />
             <div className="ellipse"></div>
-            <p className="slogan">slogan/ fun fact</p>
-            <div className="Rectangle"></div>
+            <p className="slogan">slogan/ fun fact</p> */}
+            {/* <div id = "slogan">
+                <div id="greenRectangle">
+                    <p>slogan</p>
+                </div>
+            </div> */}
+
+            <div class = "sloganSection">
+                <div class = "shapes">
+                    <div className="greenRectangle">
+                        <h3 id="slogan">slogan/ funfact</h3>
+                        <p id="sloganText">hi hello hi hello hi hello hello hi hello hi hello hi hello hi hello hi hello hi</p>
+                    </div>
+                    <img 
+                        src="./pics/girl.png"
+                        alt="girl"
+                        className="bobaPic"
+                    />               
+                </div>
+            </div>
+
+            <div id="spacer"></div>
+
+            <div class="familyHistory">
+                <div class="contents">
+                    <div id="greenBlock"></div>
+                    <div id="people">
+                        <img 
+                            src="./pics/2people.png"
+                            alt="2people"
+                            className="people"
+                        />
+                    </div>
+                    <div id="familyHistory">
+                        <img
+                            src="./pics/familyHistBlock.png"
+                            alt="greenRect"
+                            className="greenRect"
+                        />
+                        <h3>family history</h3>
+                        <p>hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

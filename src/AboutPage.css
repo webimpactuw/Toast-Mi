@@ -1,5 +1,52 @@
-.familyHistoryDescription {
-    position: absolute;
+.shapes {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.greenRectangle {
+    /* margin-right: 10%; */
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 681px;
+    height: 779px;
+
+    background: rgba(147, 199, 63, 0.24);
+    border-radius: 68px;
+}
+
+#greenBlock {
+    width: 1522px;
+    height: 701px;
+
+    background: rgba(207, 237, 184, 0.53);
+}
+
+#spacer {
+    padding-top: 30%;
+}
+
+.contents > img {
+    width: 1227px;
+    height: 717px;
+    /* left: 142px;
+    top: 1516px; */
+    border-radius: 72px;
+    margin-top: -70%;
+    z-index: 3;
+
+}
+
+.greenRectangle > h3 {
+    font-family: 'Gluten', cursive;
+    font-size: 490%;
+    padding-left: 15%;
+    overflow-wrap: break-all;
+    padding-top: 25%;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 85px;
+}
+
+#familyHistBlock > p {
     width: 865px;
     height: 343px;
     left: 402px;
@@ -10,18 +57,62 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
-    /* or 167% */
+
 
     display: flex;
     align-items: center;
     text-align: right;
 
     color: rgba(0, 0, 0, 0.61);
-    z-index: 19;
 
 }
-.sloganDescription {
-    position: absolute;
+
+#familyHistBlock {
+    width: 1021px;
+    height: 531px;
+    left: 324px;
+    top: 1950px;
+
+    background: rgba(213, 230, 137, 0.83);
+    border-radius: 68px;
+    margin-top: -40%;
+    z-index: 4;
+}
+
+
+#familyHistory > p {
+    width: 65%;
+    height: 189px;
+    left: 186px;
+    top: 655px;
+
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 180%;
+
+
+    /* display: flex; */
+    align-items: center;
+    text-align: right;
+    margin-left: 20%;
+    color: #383838;
+    z-index: 8;
+}
+.shapes > img {
+    width: 680px;
+    height: 783px;
+    left: 627px;
+    top: 232px;
+    margin-top: -1090px;
+    position: relative;
+
+    align-content: right;
+    z-index: 1;
+}
+
+.greenRectangle > p {
     width: 399px;
     height: 189px;
     left: 186px;
@@ -33,294 +124,44 @@
     font-size: 35px;
     line-height: 44px;
     /* or 126% */
-
-    display: flex;
+    margin-left: 10%;
     align-items: center;
     text-align: center;
 
     color: #383838;
-    z-index: 18;
 
 }
-.slogan {
-    position: absolute;
-    width: 450px;
-    height: 309px;
-    left: 186px;
-    top: 480px;
 
-    font-family: 'Gluten', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 85px;
-    /* display: flex; */
-    /* align-items: center;  */
-
-    color: #000000;
-
-    word-wrap: break-word;
-    
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 16;
-}
-.parent {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.Rectangle {
-    position: absolute;
-    width: 681px;
-    height: 740px;
-    left: 125px;
-    top: 325px;
-
-    background: rgba(147, 199, 63, 0.24);
-    border-radius: 68px;
-    z-index: 1;
-}
-
-.girl {
-    position: absolute;
-    top: 232px;
-    left: 627px;
-    z-index: 2;
-}
-
-.ellipse {
-    position: absolute;
-    width: 175px;
-    height: 175px;
-    left: 85px;
-    top: 421px;
-
-    background: rgba(56, 166, 100, 0.28);
-    border-radius: 85px;
-    z-index: 3;
-}
-
-.egg {
-    position: absolute;
-    left: 547px;
-    top: 899px;
-    z-index: 4;
-}
-
-.orangeCircle {
-    position: absolute;
-    width: 82px;
-    height: 82px;
-    left: 840px;
-    top: 1063px;
-
-    background: #FAEDCD;
-    border-radius: 159px;
-    z-index: 5;
-}
-.y {
-    position: absolute;
-    width: 18px;
-    height: 26px;
-    left: 1162.19px;
-    top: 1145px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(30.49deg);
-    z-index: 17;
-}
-
-.u {
-    position: absolute;
-    width: 20px;
-    height: 26px;
-    left: 1179.35px;
-    top: 1155.01px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(20.46deg);
-    z-index: 17;
-}
-
-.m {
-    position: absolute;
-    width: 24px;
-    height: 26px;
-    left: 1199.47px;
-    top: 1162.57px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(9.19deg);
-    z-index: 17;
-}
-
-.y2 {
-    position: absolute;
-    width: 18px;
-    height: 26px;
-    left: 1237.83px;
-    top: 1166.12px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(-7.93deg);
-    z-index: 17;
-}
-
-.u2 {
-    position: absolute;
-    width: 20px;
-    height: 26px;
-    left: 1257.49px;
-    top: 1163.3px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(-17.96deg);
-    z-index: 17;
-}
-
-.m2 {
-    position: absolute;
-    width: 24px;
-    height: 26px;
-    left: 1277.96px;
-    top: 1156.72px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 26px;
-
-    color: #FFFFFF;
-
-    transform: rotate(-29.23deg);
-    z-index: 17;
-
-}
-.bigOrangeCircle {
-    position: absolute;
-    width: 326px;
-    height: 326px;
-    left: 1070px;
-    top: 881px;
-    background: #F9D897;
-    z-index: 6;
-    border-radius: 200px;
-}
-
-.lowBlueCircle {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 1037px;
-    top: 1081px;
-
-    background: rgba(56, 166, 100, 0.28); 
-    z-index: 7;
-    border-radius: 159px;
-}
-
-.smallOrangeCircle {
-    position: absolute;
-    width: 82px;
-    height: 82px;
-    left: 371px;
-    top: 1299px;
-
-    background: #FAEDCD;
-    border-radius: 159px;
-    z-index: 8;
-}
-
-.smallGreenCircle {
-    position: absolute;
-    width: 115px;
-    height: 115px;
-    left: 453px;
-    top: 1367px;
-
-    background: rgba(200, 226, 157, 0.81);
-    border-radius: 159px;
-    z-index: 9;
-}
-
-.greenBackground {
-    position: absolute;
-    width: 1522px;
-    height: 701px;
-    left: 0px;
-    top: 1644px;
-
-    background: rgba(207, 237, 184, 0.53);
-    z-index: 10;
-}
-
-.people {
-    position: absolute;
-    width: 1227px;
-    height: 717px;
-    left: 120px;
-    top: 1516px;
-    border-radius: 72px;
-    z-index: 11;
-}
-
-.greenRectangle {
-    position: absolute;
+.greenRect {
+    margin-top: -30%;
+    margin-left: 10%;
     width: 1021px;
     height: 531px;
-    left: 300px;
+    left: 324px;
     top: 1950px;
 
     background: rgba(213, 230, 137, 0.83);
     border-radius: 68px;
-    z-index: 12;
 }
 
-.familyHistory {
-    position: absolute;
+.people {
+    margin-top: -70%;
+    width: 1227px;
+    height: 717px;
+    left: 142px;
+    top: 1516px;
+    border-radius: 72px;
+}
+
+#familyHistory > h3 {
     width: 865px;
     height: 128px;
     left: 402px;
     top: 2018px;
+    margin-left: 38%;
+    margin-top: -35%;
 
-    font-family: 'Gluten', cursive;
+    font-family: 'Gluten';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -332,75 +173,4 @@
     color: #000000;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 13;
-}
-
-.greenEllipse {
-    position: absolute;
-    left: 392px;
-    top: 2410px;
-    z-index: 14;
-}
-
-.tomato {
-    position: absolute;
-    width: 128px;
-    height: 140px;
-    left: 324px;
-    top: 2516px;
-    z-index: 15;
-}
-
-.popularItems {
-    position: absolute;
-    width: 885px;
-    height: 138px;
-    left: 340px;
-    top: 2803px;
-
-    font-family: 'Gluten';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 85px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-    z-index: 20;
-}
-
-.leftCircle {
-    position: absolute;
-    width: 366px;
-    height: 363px;
-    left: 146px;
-    top: 2960px;
-
-    background: rgba(249, 216, 151, 0.38);
-    z-index: 21;
-    border-radius: 200px;
-}
-
-.middleCircle {
-    position: absolute;
-    width: 366px;
-    height: 363px;
-    left: 573px;
-    top: 2960px;
-
-    background: rgba(249, 216, 151, 0.62);
-    border-radius: 200px;
-}
-
-.rightCircle {
-    position: absolute;
-    width: 366px;
-    height: 363px;
-    left: 1003px;
-    top: 2960px;
-
-    background: #F9D897;
-    border-radius: 200px;
 }
