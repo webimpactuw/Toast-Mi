@@ -38,7 +38,7 @@
   }
 }
 
-.header {
+/* .header {
   text-align: center;
   background-image: url(../public/pics/orderBanner.png);
   background-size: cover;
@@ -48,6 +48,23 @@
   font-family: 'Gluten', cursive;
   font-weight: 300;
   letter-spacing: 0.1em;
+} */
+
+.header {
+  text-align: center;
+  background-image: url(../public/pics/orderBanner.png);
+  background-size: cover;
+  padding: 80px;
+  color: white;
+  font-size: 35px;
+  font-family: 'Gluten', cursive;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.header > h1 {
+  font-weight: 600;
+  font-size: 300%;
 }
 
 .content {
