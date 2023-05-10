@@ -4,12 +4,7 @@ import "../App.css";
 export default function OrderPage(props) {
 
     return (
-        // Everything needs to be encapsulated by 1 div (only returns 1 thing)
-        // 1. Always pull (git pull)
-        // 2. Work 
-        // 3. Commit (git commit -a -m "commit message"")
-        // 4. Pull (git pull)
-        // 5. Push (git push)
+        
         <div>
              <div class="header">
                 <h1>Order</h1>
@@ -133,7 +128,9 @@ export default function OrderPage(props) {
                                    <img src="pics/greenlakeMap.png"></img> 
                                 </a> */}
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.2145689734325!2d-122.32704112289025!3d47.68025277119679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015db737bb9c7%3A0x88904a12f4e8e731!2sToast%20Mi%20Green%20Lake!5e0!3m2!1sen!2sus!4v1683160138237!5m2!1sen!2sus" width="400" height="300" styles="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                {/* <img className="eggie" src="pics/egg.png" alt="egg"></img> */}
                                 <img src="pics/logo.jpg" className='bottomLogo'></img>
+                                {/* <img className="eggie" src="pics/egg.png" alt="egg"></img> */}
                                 
                             </div>
                         </div>
