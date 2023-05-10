@@ -7,17 +7,12 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 990px) {
     .large-header{
       display: none !important;
-    }
-
-
-  
-    
+    } 
   }
-
-  @media screen and (min-width: 968px) {
+  @media screen and (min-width: 990px) {
     .small-header{
         display: none !important;
     }
