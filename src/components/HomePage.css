@@ -19,7 +19,7 @@
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     background: rgba(248, 248, 234, 0.61);
     box-shadow: 6px 36px 28px rgba(0, 0, 0, 0.25);
 }
@@ -130,6 +130,7 @@
 }
 
 .socials-text {
+    padding-top: 3%;
     text-align: left;
     margin-left: 5.5%;
     font-family: 'Inter';
@@ -150,6 +151,7 @@
     line-height: 24px;
     color: #000000;
     padding-top: 10px;
+    margin-bottom: -5%;
 }
 
 .kodfun-galeri {
@@ -192,4 +194,33 @@
 
 .about-us-button:hover,.menu-button:hover {
     background-color: rgba(248, 248, 234, 0.61);    
+}
+
+.location-text {
+    padding-top: 5%;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.location-container {
+    margin-top: 20px;
+    margin-left: 5.5%;
+    margin-right: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-left {
+    float: left;
+    width: 100%;
+}
+
+#location-right {
+    float: right;
+    width: 100%;
 }

@@ -62,6 +62,21 @@ export default function HomePage(props) {
                         <div id="pic4"></div>
                     </div>
                 </div>
+
+                <div className="row">
+                    <h2 class="location-text">Find us at our two locations:</h2>
+                </div>
+
+                <div className="row" id="row">
+                    <div class="location-container">
+                        <div className="col">
+                            <img src="./pics/greenlake.png" id="location-left"/>
+                        </div>
+                        <div className="col">
+                            <img src="./pics/tacoma.png" id="location-right"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
