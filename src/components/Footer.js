@@ -49,7 +49,6 @@ export default function Footer(props) {
             <div className='row' >
                 <div className='col logo'>
                     {logo}
-
                 </div>
                 <div className='col links'>
                     <ul className='list-inline'>
@@ -70,12 +69,10 @@ export default function Footer(props) {
                     <div className='text-start'>Tacoma, WA 98407</div>
 
                 </div>
-                <div className='col justify-content-center'>
-                    <div>
-                        <p className='text-start fw-bold'>Hours:</p>
-                        <p className='text-start'>open daily// 11:00am - 6:00pm</p>
-                        {socials}
-                    </div>
+                <div className='col'>
+                    <p className='text-start fw-bold'>Hours:</p>
+                    <p className='text-start'>open daily// 11:00am - 6:00pm</p>
+                    {socials}
                 </div>
 
             </div>
