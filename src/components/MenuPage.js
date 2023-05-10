@@ -1,5 +1,98 @@
 import React from 'react';
 
+const BANH_MI = [
+    {
+        name:"The Mekong (Grilled Pork)",
+        description:"Grilled Pork"
+    },
+    {
+        name:"The Notre Dame (Shredded Chicken)",
+        description:"Shredded Chicken seasoned with our sauces and tossed with caramelized onion"
+    },
+    {
+        name:"The Sapa (Sautéed Tofu)",
+        description:"Great Vegetarian Option! Tofu Sautéed in lemongrass and coconut milk."
+    },
+    {
+        name:"The Hoi An (Classic Cold Cuts)",
+        description:"A combination of different traditional Vietnamese cold cuts comes together"
+    },
+    {
+        name:"The Dragon Bridge (Meatballs)",
+        description:"Traditional Vietnamese pork meatballs with tomato sauce."
+    },
+    {
+        name:"The Ha Long Bay (Grilled Beef)",
+        description:"Shredded Chicken seasoned with our sauces and tossed with caramelized onion"
+    },
+    {
+        name:"The Imperial City (House Special)",
+        description:"Our House special Banh Mi includes 2 types of meat of your choice, with a sunny-side-up egg on top!"
+    }
+];
+
+const BOWLS = [
+    {
+        name:"Grilled Pork",
+        description:""
+    },
+    {
+        name:"Shredded Chicken",
+        description:""
+    },
+    {
+        name:"Grilled Beef",
+        description:""
+    },
+    {
+        name:"Sauteed Tofu",
+        description:""
+    },
+    {
+        name:"House Special Bowl",
+        description:""
+    },
+];
+
+const DRINKS = [
+    {
+        name:"Matcha Mango",
+        description:""
+    },
+    {
+        name:"Taro Oreo",
+        description:""
+    },
+    {
+        name:"Strawberry Cheesecake",
+        description:""
+    },
+    {
+        name:"Coconut Coffee",
+        description:""
+    },
+    {
+        name:"Brown Sugar Fresh Milk Boba",
+        description:""
+    },
+    {
+        name:"Classic Milk Tea",
+        description:""
+    },
+    {
+        name:"Fresh Fruit Tea",
+        description:"Green tea with your choice of Fruit! (Strawberry, Mango, Peach)"
+    },
+    {
+        name:"Thai Tea",
+        description:""
+    },
+    {
+        name:"Vietnamese Coffee",
+        description:""
+    },
+];
+
 function Menu(props) {
 
     return (
@@ -60,22 +153,31 @@ function Menu(props) {
 }
 
 export default function MenuPage(props) {
-    return (
-        <div className='header-box d-flex flex-column justify-content-center'>
-            <h1 className='menu-header'>Banh Mi</h1>
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        {/* <img src="..." class="img-fluid rounded-start" alt="..."/> */}
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+    const itemsChunk = BANH_MI.map((item) => {
+        const component = (
+            <div className="card col-5 m-2 p-3">
+                    <div className="row g-0">
+                        <div className="col-md-8 d-flex align-items-center justify-content-center flex-column">
+                            <div className="card-body">
+                                <h5 className="card-title">{item.name}</h5>
+                                <p className="card-text">{item.description}</p>
+                            </div>
+                        </div>
+                        <div className="col-md-4  d-flex align-items-center justify-content-center flex-column item-img">
+                            <img src={"pics/banhmi/"+ item.name + ".png"} className="" alt={item.name} width="124" height="82"/>
                         </div>
                     </div>
                 </div>
+        );
+        return component;
+    })
+
+    return (
+        <div className='container'>
+            <h1 className='menu-type'>Banh Mi</h1>
+            <div className="card-container row p-3 justify-content-center menu-items">
+                {itemsChunk}
             </div>
         </div>
     )
