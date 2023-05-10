@@ -6,7 +6,7 @@ export default function Header() {
     const navButtons = navList.map((navName) => {
         const component = (
             <li key={navName} className="nav-item">
-                <Link className="nav-link active" to={"/" + navName}>{navName}</Link>
+                <Link className="nav-link link-dark active" to={"/" + navName}>{navName}</Link>
             </li>);
         return component;
     })
@@ -36,7 +36,7 @@ export default function Header() {
 
         </li></div>);
     return (
-        <div >
+        <div className='container' >
             <div className='large-header row pt-2 '>
                 <ul className="nav justify-content-center align-items-center">
                     <div className='nav col-3 align-middle '>
@@ -55,7 +55,7 @@ export default function Header() {
                     </li>
                     <div className='nav col-3 justify-content-center'>
                         <li className="nav-item">
-                            <a className="nav-link active">Follow us!</a>
+                            <a className="nav-link link-dark active">Follow us!</a>
                         </li>
                         {socials}
                     </div>
