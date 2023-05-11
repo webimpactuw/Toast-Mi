@@ -6,10 +6,9 @@ export default function HomePage(props) {
     return (
         <div>  
             <div class="header">
-                <div id="temp">
+                <div class="header-text-container">
                     <h1 class="header-text">more than</h1>
                 </div>
-                
             </div>
 
             <div class="box">
@@ -18,14 +17,14 @@ export default function HomePage(props) {
                 </div>
                 <div className="row" id="row">
                     <div className="col">
-                        <div id="firstBox">
+                        <div id="textBox">
                             <h2 class="welcome-text">Welcome to Toast Mi</h2>
                             <p class="paragraph-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                             <a href="./About"><button class="about-us-button">About us</button></a>
                         </div>
                     </div>
                     <div className="col">
-                        <div id="secondBox">
+                        <div id="picBox">
                             <img src="./pics/about-us-background.png"/>
                             <img src="./pics/about-us-pic.png" id="main"/>
                         </div>
@@ -55,7 +54,7 @@ export default function HomePage(props) {
                 </div>
 
                 <div className="row" id="row">
-                    <div class="kodfun-galeri">
+                    <div class="gallery">
                         <div id="pic1"></div>
                         <div id="pic2"></div>
                         <div id="pic3"></div>

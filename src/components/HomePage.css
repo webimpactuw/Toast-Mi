@@ -4,11 +4,15 @@
 .header {
     background-image: url(../../public/pics/main-bahnmi.png);
     color: white;   
-    background-size: cover;
+}
+
+.header-text-container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .header-text {
-    text-align: left;
+    padding-left: 10.5%;
     font-family: 'Inter';
     font-style: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -40,7 +44,7 @@
     color: #99352E;
 } 
 
-#firstBox {
+#textBox {
     margin-top: 100px;
     width: 100%;
     text-align: left;
@@ -79,7 +83,7 @@
     color: #4D7B41;
 }
 
-#secondBox {
+#picBox {
     padding-left: 20%;
 }
 
@@ -154,14 +158,14 @@
     margin-bottom: -5%;
 }
 
-.kodfun-galeri {
+.gallery {
     margin-left: 5.5%;
     display: flex;
     height: 20rem;
     gap: 1rem;
 }
 
-.kodfun-galeri > div {
+.gallery > div {
     background-image: url(../../public/pics/main-bahnmi.png);
     flex: 0.5;
     border-radius: 1rem;
@@ -171,8 +175,8 @@
     transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
 
-.kodfun-galeri > div:hover {
-    flex: 1.25;
+.gallery > div:hover {
+    flex: 1;
 }
 
 #pic1 {
