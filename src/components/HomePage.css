@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+.header {
+    background-image: url(../../public/pics/main-bahnmi.png);
+    color: white;   
+    background-size: cover;
+}
+
+.header-text {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+}
+
+.box {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    background: rgba(248, 248, 234, 0.61);
+    box-shadow: 6px 36px 28px rgba(0, 0, 0, 0.25);
+}
+
+#row {
+    margin-left: 5.5%;
+    padding-bottom: 50px;
+    margin-right: 15.5%;
+}
+
+.slogan-text {
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+    color: #99352E;
+} 
+
+#firstBox {
+    margin-top: 100px;
+    width: 100%;
+    text-align: left;
+}
+
+.welcome-text {
+    font-family: 'Gluten', cursive;   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 42px;
+    color: #4D7B41;
+}
+
+.paragraph-text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    margin-top: 30px;
+    color: #000000;
+}
+
+.about-us-button {
+    width: 150px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 41px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #4D7B41;
+}
+
+#secondBox {
+    padding-left: 20%;
+}
+
+#main {
+    margin-top: -150%;
+}
+
+.menu-text {
+    margin-left: 5.5%;
+    margin-right: -10.5%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 42px;
+    color: #99352E;
+    margin-bottom: 20px;
+}
+
+#food-pics {
+    margin-right: -10.5%;
+}
+
+#drink {
+    margin-left: 15%;
+}
+
+#plate {
+    margin-right: 20%;
+}
+
+.menu-button {
+    margin-right: -10.5%;
+    width: 350px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 41px;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #99352E;
+}
+
+.socials-text {
+    padding-top: 3%;
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.instagram-text {
+    text-align: left;
+    margin-left: 5.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 10px;
+    margin-bottom: -5%;
+}
+
+.kodfun-galeri {
+    margin-left: 5.5%;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri > div {
+    background-image: url(../../public/pics/main-bahnmi.png);
+    flex: 0.5;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.kodfun-galeri > div:hover {
+    flex: 1.25;
+}
+
+#pic1 {
+    background-image: url(../../public/pics/instagram1.png);
+}
+
+#pic2 {
+    background-image: url(../../public/pics/instagram2.png);
+}
+
+#pic3 {
+    background-image: url(../../public/pics/instagram3.png);
+}
+
+#pic4 {
+    padding-right: -3.5%;
+    background-image: url(../../public/pics/instagram4.png);
+}
+
+.about-us-button:hover,.menu-button:hover {
+    background-color: rgba(248, 248, 234, 0.61);    
+}
+
+.location-text {
+    padding-top: 5%;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.location-container {
+    margin-top: 20px;
+    margin-left: 5.5%;
+    margin-right: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-left {
+    float: left;
+    width: 100%;
+}
+
+#location-right {
+    float: right;
+    width: 100%;
+}
