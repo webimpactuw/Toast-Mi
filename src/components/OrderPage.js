@@ -21,7 +21,7 @@ export default function OrderPage(props) {
                     <div className='row'>
                         <div className="col">
                             {/* <img src="pics/TacomaOrder.png"></img> */}
-                            <div className="innerWhiteBox" id="firstBox">
+                            <div className="innerWhiteBox" id="order-firstBox">
                                 <h3>Tacoma</h3>
                                 <p>2602 N Proctor St Suite D <br/> Tacoma, WA 98407</p>
                                 <p>(253)-245-2246</p>
@@ -76,7 +76,7 @@ export default function OrderPage(props) {
                         </div>
                         <div className="col">
                             {/* <img src="pics/GreenlakeOrder.png" alt="GreenlakeOrder"></img> */}
-                            <div className="innerWhiteBox" id="secondBox">
+                            <div className="innerWhiteBox" id="order-secondBox">
                                 <h3>GreenLake</h3>
                                 <p>7130 Woodlawn Ave NE <br/> Seattle, WA 98115</p>
                                 <p>(206)-402-5546</p>

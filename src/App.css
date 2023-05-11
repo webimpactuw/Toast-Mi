@@ -38,18 +38,6 @@
   }
 }
 
-/* .header {
-  text-align: center;
-  background-image: url(../public/pics/orderBanner.png);
-  background-size: cover;
-  padding: 80px;
-  color: white;
-  font-size: 35px;
-  font-family: 'Gluten', cursive;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-} */
-
 .header {
   text-align: center;
   background-image: url(../public/pics/orderBanner.png);
@@ -89,13 +77,6 @@
   padding: 20px;
 }
 
-/* .greenBox::after {
-  content: "";
-  clear: both;
-  display: table;
-  
-} */
-
 .images {
   text-align: center;
 }
@@ -109,14 +90,16 @@
   border-radius: 5px;
 }
 
-#firstBox {
+#order-firstBox {
   margin-left: 10%;
   margin-right: 2.5%;
+
 }
 
-#secondBox {
+#order-secondBox {
   margin-right: 10%;
   margin-left: 2.5%;
+
 }
 
 .innerWhiteBox>h3 {
@@ -130,21 +113,6 @@
   font-family: 'Baloo Bhai 2', cursive;
   font-size: 150%;
 }
-
-/* .innerWhiteBox :nth-child(5) {
-  letter-spacing: 0.1em;
-  font-size: 200%;
-} */
-
-/* .innerWhiteBox :nth-child(6) {
-  letter-spacing: 0.1em;
-  font-size: 200%;
-} */
-
-/* #dotRow {
-  letter-spacing: 0.1em;
-  font-size: 200%;
-} */
 
 .innerWhiteBox :nth-child(5) {
   text-align: left;
