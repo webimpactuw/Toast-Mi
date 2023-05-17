@@ -108,7 +108,6 @@
     height: 100%;
     margin-left: 40%;
     margin-top: -65%;
-    /* position: relative; */
 
     align-content: right;
     z-index: 1;
@@ -244,59 +243,6 @@
     color: #000000;
 }
 
-#leftCircle {
-    width: 25%;
-    height: 350px;
-    margin-left: 10%;
-    /* margin-bottom: -20.2%; */
-    /* top: 2960px; */
-    border-radius: 50%;
-
-    background: rgba(249, 216, 151, 0.38);
-}
-
-#middleCircle {
-    width: 25%;
-    height: 350px;
-    /* margin-left: 20%; */
-    padding-top: -41%;
-    margin-left: 40%;
-    /* padding-bottom: -20%; */
-    margin-bottom: -20.2%;
-    border-radius: 50%;
-    /* top: 2960px; */
-
-    background: rgba(249, 216, 151, 0.62);
-}
-
-#rightCircle {
-    width: 25%;
-    height: 350px;
-    padding-top: -41%;
-    margin-left: 71%;
-    border-radius: 50%;
-    /* top: 2960px; */
-
-    background: #F9D897;
-}
-
-.drink {
-    width: 80%;
-    height: 80%;
-    padding-top: 10%;
-}
-
-.bowl {
-    width: 80%;
-    height: 80%;
-    padding-top: 10%;
-}
-
-.sandwich {
-    width: 80%;
-    height: 80%;
-    padding-top: 10%;
-}
 
 #favoriteItems > h4 {
     width: 100%;

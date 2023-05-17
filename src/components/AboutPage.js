@@ -94,7 +94,7 @@ export default function AboutPage(props) {
                     </div>
                     <div id="favoriteItems">
                         <h3>popular items</h3>
-                        <div id="leftCircle">
+                        {/* <div id="leftCircle">
                             <img
                                 src="./pics/drink.png"
                                 className="drink"
@@ -111,6 +111,26 @@ export default function AboutPage(props) {
                                 src="./pics/sandwich.png"
                                 className="sandwich"
                             />
+                        </div> */}
+                        <div className="row">
+                            <div className="col" id="drink">
+                                <img
+                                    src="./pics/drink.png"
+                                    className="drink"
+                                />
+                            </div>
+                            <div className="col">
+                                <img 
+                                    src="./pics/bowl.png"
+                                    className="bowl"
+                                />
+                            </div>
+                            <div className="col">
+                                <img
+                                    src="./pics/sandwich.png"
+                                    className="sandwich"
+                                />
+                            </div>
                         </div>
                         <h4>link to order...</h4>
                     </div>
