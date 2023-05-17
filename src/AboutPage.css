@@ -1,12 +1,13 @@
-.shapes {
+/* .shapes {
     display: grid;
     grid-template-columns: 1fr;
-}
+} */
 .greenRectangle {
     /* margin-right: 10%; */
     margin-left: 10%;
+    margin-right: 200%;
     margin-top: 10%;
-    width: 681px;
+    width: 45%;
     height: 779px;
 
     background: rgba(147, 199, 63, 0.24);
@@ -43,20 +44,20 @@
     padding-top: 25%;
     text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 85px;
+    line-height: 85%;
 }
 
 #familyHistBlock > p {
-    width: 865px;
-    height: 343px;
-    left: 402px;
-    top: 2115px;
+    width: 100%;
+    height: 343%;
+    left: 402%;
+    top: 2115%;
 
     font-family: 'Baloo Bhai 2';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 20%;
+    line-height: 50%;
 
 
     display: flex;
@@ -64,7 +65,6 @@
     text-align: right;
 
     color: rgba(0, 0, 0, 0.61);
-
 }
 
 #familyHistBlock {
@@ -102,16 +102,17 @@
     color: #383838;
     z-index: 8;
 }
-.shapes > img {
-    width: 680px;
-    height: 783px;
-    left: 627px;
-    top: 232px;
-    margin-top: -1090px;
-    position: relative;
+
+.bobaPic {
+    width: 50%;
+    height: 100%;
+    margin-left: 40%;
+    margin-top: -65%;
+    /* position: relative; */
 
     align-content: right;
     z-index: 1;
+    border-radius: 12%;
 }
 
 .greenRectangle > p {
@@ -125,7 +126,6 @@
     font-weight: 500;
     font-size: 35px;
     line-height: 44px;
-    /* or 126% */
     margin-left: 10%;
     align-items: center;
     text-align: center;
@@ -136,8 +136,8 @@
 
 .greenRect {
     margin-top: -30%;
-    margin-left: 10%;
-    width: 1021px;
+    margin-left: 22%;
+    width: 65%;
     height: 531px;
     left: 324px;
     top: 1950px;
@@ -146,13 +146,56 @@
     border-radius: 68px;
 }
 
+.greenRect > p {
+    width: 91%;
+    height: 60%;
+    border-left: 300%;
+    top: 40%;
+
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.greenRect > h3 {
+    width: 100%;
+    height: 20%;
+    left: 402px;
+    top: 2018%;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-bottom: 5%;
+
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .people {
     margin-top: -70%;
-    width: 1227px;
-    height: 717px;
-    left: 142px;
-    top: 1516px;
-    border-radius: 72px;
+    width: 80%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    
 }
 
 #familyHistory > h3 {
@@ -177,4 +220,116 @@
     color: #000000;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#favoriteItems {
+    padding-bottom: 20%;
+}
+
+#favoriteItems > h3 {
+    width: 100%;
+    height: 138%;
+    left: 340%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 85px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#leftCircle {
+    width: 25%;
+    height: 350px;
+    margin-left: 10%;
+    /* margin-bottom: -20.2%; */
+    /* top: 2960px; */
+    border-radius: 50%;
+
+    background: rgba(249, 216, 151, 0.38);
+}
+
+#middleCircle {
+    width: 25%;
+    height: 350px;
+    /* margin-left: 20%; */
+    padding-top: -41%;
+    margin-left: 40%;
+    /* padding-bottom: -20%; */
+    margin-bottom: -20.2%;
+    border-radius: 50%;
+    /* top: 2960px; */
+
+    background: rgba(249, 216, 151, 0.62);
+}
+
+#rightCircle {
+    width: 25%;
+    height: 350px;
+    padding-top: -41%;
+    margin-left: 71%;
+    border-radius: 50%;
+    /* top: 2960px; */
+
+    background: #F9D897;
+}
+
+.drink {
+    width: 80%;
+    height: 80%;
+    padding-top: 10%;
+}
+
+.bowl {
+    width: 80%;
+    height: 80%;
+    padding-top: 10%;
+}
+
+.sandwich {
+    width: 80%;
+    height: 80%;
+    padding-top: 10%;
+}
+
+#favoriteItems > h4 {
+    width: 100%;
+    height: 138%;
+    /* left: 509px;
+    top: 3363px; */
+
+    font-family: 'Gluten';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 300%;
+    line-height: 44%;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#lastSection {
+    background: #D5E689;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.actionShot {
+    width: 100%;
+    height: 65%;
+}
+
+.bottomEgg {
+    width: 10%;
+    height: 10%;
+    margin-top: -115%;
+    margin-right: 70%;
 }

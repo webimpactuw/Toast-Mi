@@ -87,12 +87,42 @@ export default function AboutPage(props) {
                         />
                     </div>
                     <div id="familyHistory">
-
                         <div className="greenRect">
                             <h3>family history</h3>
                             <p>hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello</p>
-
                         </div>
+                    </div>
+                    <div id="favoriteItems">
+                        <h3>popular items</h3>
+                        <div id="leftCircle">
+                            <img
+                                src="./pics/drink.png"
+                                className="drink"
+                            />
+                        </div>
+                        <div id="middleCircle">
+                            <img 
+                                src="./pics/bowl.png"
+                                className="bowl"
+                            />
+                        </div>
+                        <div id="rightCircle">
+                            <img
+                                src="./pics/sandwich.png"
+                                className="sandwich"
+                            />
+                        </div>
+                        <h4>link to order...</h4>
+                    </div>
+                    <div id="lastSection">
+                        <img
+                            src="./pics/actionShot.png"
+                            className="actionShot"
+                        />
+                        <img
+                            src="./pics/bottomEgg.png"
+                            className="bottomEgg"
+                        />
                     </div>
                 </div>
             </div>
