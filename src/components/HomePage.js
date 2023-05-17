@@ -5,10 +5,8 @@ export default function HomePage(props) {
 
     return (
         <div>  
-            <div class="header">
-                <div class="header-text-container">
-                    <h1 class="header-text">more than</h1>
-                </div>
+            <div className="row header pb-0">
+                <div className="d-flex justify-content-start header-text">more than</div>
             </div>
 
             <div class="box">
