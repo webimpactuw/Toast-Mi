@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./HomePage.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export default function HomePage(props) {
 
@@ -23,8 +25,7 @@ export default function HomePage(props) {
                     </div>
                     <div className="col">
                         <div id="picBox">
-                            <img src="./pics/about-us-background.png"/>
-                            <img src="./pics/about-us-pic.png" id="main"/>
+                            <img src="./pics/about-us-together.png"/>
                         </div>
                     </div>
                 </div>
@@ -48,7 +49,7 @@ export default function HomePage(props) {
 
                 <div className="row" id="row">
                     <h1 class="socials-text">Keep Up With Us!</h1>
-                    <a href="https://instagram.com/toastmiplease"><h2 class="instagram-text">@toastmiplease</h2></a>
+                    <a href="https://instagram.com/toastmiplease"><FontAwesomeIcon icon="fa-brands fa-instagram" /><h2 class="instagram-text">toastmiplease</h2></a>
                 </div>
 
                 <div className="row" id="row">
