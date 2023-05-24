@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
+import sanityClient from '../client'
+import imageUrlBuilder from '@sanity/image-url';
 
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+    // console.log(builder.image('image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png'))
+    return builder.image(source);
+}
 const BANH_MI = [
     {
         name: "The Mekong (Grilled Pork)",
@@ -96,11 +104,20 @@ const DRINKS = [
 ];
 
 export function MenuRoot(props) {
+    const [menuInfo, setMenuInfo] = useState(['hello', 'nothing']);
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "bahnmi"]').then((data) => {
+            // console.log(data[0].mainImage.asset._ref)
+            setMenuInfo(data)
 
+        })
+
+    }, []);
     return (
         <div className='container'>
             <div className='row'>
                 <div className='col-3 img-col'>
+                    <img src={urlFor(menuInfo[0].mainImage.asset._ref)} />
                     <img src='/pics/menu1.png' />
                     <img src='/pics/menu2.png' />
                     <img src='/pics/menu3.png' />
