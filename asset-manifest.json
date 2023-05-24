@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Toast-Mi/static/css/main.bc4b09f1.css",
+    "main.js": "/Toast-Mi/static/js/main.ccd2fc41.js",
+    "static/media/main-bahnmi.png": "/Toast-Mi/static/media/main-bahnmi.6e8599160703e9ff3fc2.png",
+    "static/media/instagram2.png": "/Toast-Mi/static/media/instagram2.0e41dcf0aa946a3c9312.png",
+    "static/media/instagram1.png": "/Toast-Mi/static/media/instagram1.5edda8e76b23acc131e5.png",
+    "static/media/orderBanner.png": "/Toast-Mi/static/media/orderBanner.825aa697bb7dbc1e5509.png",
+    "static/media/instagram4.png": "/Toast-Mi/static/media/instagram4.e6a6e70b20a5761c290b.png",
+    "static/media/instagram3.png": "/Toast-Mi/static/media/instagram3.eb938139807f65ea3350.png",
+    "index.html": "/Toast-Mi/index.html",
+    "main.bc4b09f1.css.map": "/Toast-Mi/static/css/main.bc4b09f1.css.map",
+    "main.ccd2fc41.js.map": "/Toast-Mi/static/js/main.ccd2fc41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc4b09f1.css",
+    "static/js/main.ccd2fc41.js"
+  ]
+}
