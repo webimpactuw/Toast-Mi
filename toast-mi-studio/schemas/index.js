@@ -1,6 +1,9 @@
-import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
+import home from './home'
+import about from './about'
+import order from './order'
+import menu from './menu'
+import bahnmi from './bahnmi'
+import bowl from './bowl'
+import drinks from './drinks'
 
-export const schemaTypes = [post, author, category, blockContent]
+export const schemaTypes = [home, about, order, menu, bahnmi, bowl, drinks]
