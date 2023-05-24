@@ -17,6 +17,11 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'orderNum',
+      title: 'Order Number',
+      type: 'number',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',

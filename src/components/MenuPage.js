@@ -7,7 +7,6 @@ import imageUrlBuilder from '@sanity/image-url';
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
-    // console.log(builder.image('image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png'))
     return builder.image(source);
 }
 const BANH_MI = [
@@ -104,20 +103,11 @@ const DRINKS = [
 ];
 
 export function MenuRoot(props) {
-    const [menuInfo, setMenuInfo] = useState(['hello', 'nothing']);
-    useEffect(() => {
-        sanityClient.fetch('*[_type == "bahnmi"]').then((data) => {
-            // console.log(data[0].mainImage.asset._ref)
-            setMenuInfo(data)
-
-        })
-
-    }, []);
     return (
         <div className='container'>
             <div className='row'>
                 <div className='col-3 img-col'>
-                    <img src={urlFor(menuInfo[0].mainImage.asset._ref)} />
+                    {/* <img src={urlFor(menuInfo[0].mainImage.asset._ref)} /> */}
                     <img src='/pics/menu1.png' />
                     <img src='/pics/menu2.png' />
                     <img src='/pics/menu3.png' />
@@ -172,18 +162,30 @@ export function MenuRoot(props) {
 }
 
 export function BanhMiMenu(props) {
-    const itemsChunk = BANH_MI.map((item) => {
+    const [menuInfo, setMenuInfo] = useState([{
+        mainImage: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }
+    }]);
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "bahnmi"]|order(orderNum){title,description,mainImage}').then((data) => {
+            setMenuInfo(data)
+        })
+
+    }, []);
+    const itemsChunk = menuInfo.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
+                            <h5 className="card-title">{item.title}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={"pics/banhmi/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" />
+                        {/* <img src={"pics/banhmi/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" /> */}
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
                     </div>
                 </div>
             </div>
