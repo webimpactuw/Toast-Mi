@@ -11,40 +11,43 @@
     height: 300%;
 
     background: rgba(147, 199, 63, 0.24);
-    border-radius: 68px;
+    border-radius: 10%;
 }
 
 #greenBlock {
     width: 100%;
-    height: 701px;
+    min-height: 731px;
 
     background: rgba(207, 237, 184, 0.53);
 }
 
 #spacer {
-    padding-top: 30%;
+    margin-top: 30%;
 }
 
 .contents > img {
     width: 1227px;
     height: 717px;
-    /* left: 142px;
-    top: 1516px; */
     border-radius: 72px;
     margin-top: -70%;
     z-index: 3;
 
 }
 
+.contents {
+    width: 100%;
+    height: 2%;
+}
 .greenRectangle > h3 {
     font-family: 'Gluten', cursive;
     padding-left: 15%;
     overflow-wrap: break-all;
     padding-top: 25%;
+    padding-bottom: 10%;
     text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     line-height: 85%;
-    font-size: 500%;
+    font-size: 6vw;
 
 }
 
@@ -58,6 +61,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20%;
+    margin-top: 10%;
     line-height: 50%;
 
 
@@ -85,7 +89,7 @@
 }
 #familyHistory > p {
     width: 65%;
-    height: 189px;
+    height: 20%;
     left: 186px;
     top: 655px;
 
@@ -124,8 +128,9 @@
     font-family: 'Baloo Bhai 2';
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
-    line-height: 44px;
+    font-size: 3vw;
+    line-height: 100%;
+    max-width: 60%;
     margin-left: 10%;
     align-items: center;
     text-align: center;
@@ -148,7 +153,7 @@
 }
 
 .greenRect > p {
-    width: 91%;
+    width: 100%;
     height: 60%;
     border-left: 300%;
     top: 40%;
@@ -156,12 +161,14 @@
     font-family: 'Baloo Bhai 2';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 2.5vw;
+    line-height: 150%;
+    min-width: 40%;
     /* or 167% */
 
     display: flex;
-    align-items: center;
+    padding-top: 5%;
+    /* align-items: center; */
     text-align: right;
 
     color: rgba(0, 0, 0, 0.61);
@@ -172,16 +179,17 @@
     height: 20%;
     left: 402px;
     top: 2018%;
-    padding-top: 10%;
-    padding-left: 20%;
+    padding-top: 5%;
+    /* padding-left: 20%; */
     padding-bottom: 5%;
 
     font-family: 'Gluten';
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
-    line-height: 85px;
-    display: flex;
+    font-size: 8vw;
+    line-height: 100%;
+    max-width: 200%;
+    /* display: flex; */
     align-items: center;
     text-align: right;
 
@@ -199,12 +207,12 @@
     
 }
 
-#familyHistory > h3 {
-    width: 865px;
+/* #familyHistory > h3 {
+    /* width: 865px;
     height: 128px;
     left: 402px;
-    top: 2018px;
-    margin-left: 38%;
+    top: 2018px; */
+    /* margin-left: 38%;
     margin-top: -35%;
     
 
@@ -212,8 +220,8 @@
     font-family: 'Gluten';
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
-    line-height: 85px;
+    font-size: 10vw;
+    line-height: 100%;
     display: flex;
     align-items: center;
     text-align: right;
@@ -221,7 +229,7 @@
     color: #000000;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */ */
 
 #favoriteItems {
     padding-bottom: 20%;
