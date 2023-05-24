@@ -37,7 +37,7 @@ export default function Footer(props) {
     </ul>);
     const logo = (<li className='justify-content-center'>
         <img
-            src="./pics/logo.jpg"
+            src="./pics/logo.png"
             width="180"
             height="80"
             className="d-inline-block align-middle"
@@ -45,17 +45,17 @@ export default function Footer(props) {
         />
     </li>)
     return (
-        <div className='footer-container justify-content-center py-4'>
+        <div className='footer-container px-3 justify-content-center py-4'>
             <div className='row' >
                 <div className='col logo'>
                     {logo}
                 </div>
-                <div className='col links'>
+                {/* <div className='col-2 links'>
                     <ul className='list-inline'>
                         {navButtons}
                     </ul>
 
-                </div>
+                </div> */}
                 <div className='col justify-content-center tacoma'>
                     <div className='text-start'>Tacoma</div>
                     <div className='text-start'>(253)-245-2246</div>
