@@ -11,5 +11,21 @@ export default defineType({
             title: 'Home Info',
             type: 'text',
         }),
+        defineField({
+            name: 'image1',
+            title: 'Green Lake Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+        defineField({
+            name: 'image2',
+            title: 'Tacoma Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        })
     ],
 })

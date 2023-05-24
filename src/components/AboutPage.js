@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../AboutPage.css";
 
+import sanityClient from '../client'
+import imageUrlBuilder from '@sanity/image-url';
 
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+    return builder.image(source);
+}
 // always pull, edit, commit, pull again, and then push
 export default function AboutPage(props) {
+    const [aboutInfo, setAboutInfo] = useState({
+        slogan: 'hello', familyHistory: 'history', image1: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }, image2: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }, item1: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }, item2: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }, item3: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        }
+    });
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "about"]').then((data) => {
+            setAboutInfo(data[0])
+        })
+
+    }, []);
     return (
         <div class="parent">
 
@@ -11,10 +37,11 @@ export default function AboutPage(props) {
                 <div className="shapes">
                     <div className="greenRectangle">
                         <h3 id="slogan">slogan/ funfact</h3>
-                        <p id="sloganText">hi hello hi hello hi hello hello hi hello hi hello hi hello hi hello hi hello hi</p>
+                        <p id="sloganText">{aboutInfo.slogan}</p>
                     </div>
                     <img
-                        src="./pics/girl.png"
+                        // src="./pics/girl.png"
+                        src={urlFor(aboutInfo.image1)}
                         alt="girl"
                         className="bobaPic"
                     />
@@ -28,7 +55,7 @@ export default function AboutPage(props) {
                     <div id="greenBlock"></div>
                     <div id="people">
                         <img
-                            src="./pics/2people.png"
+                            src={urlFor(aboutInfo.image2)}
                             alt="2people"
                             className="people"
                         />
@@ -36,27 +63,29 @@ export default function AboutPage(props) {
                     <div id="familyHistory">
                         <div className="greenRect">
                             <h3>family history</h3>
-                            <p>hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello hi hello</p>
-                        </div>
+                            <p>{aboutInfo.familyHistory} </p> </div>
                     </div>
                     <div id="favoriteItems">
                         <h3>popular items</h3>
                         <div className="row">
                             <div className="col" id="drink">
                                 <img
-                                    src="./pics/drink.png"
+                                    // src="./pics/drink.png"
+                                    src={urlFor(aboutInfo.item1)}
                                     className="drink"
                                 />
                             </div>
                             <div className="col">
-                                <img 
-                                    src="./pics/bowl.png"
+                                <img
+                                    // src="./pics/bowl.png"
+                                    src={urlFor(aboutInfo.item2)}
                                     className="bowl"
                                 />
                             </div>
                             <div className="col">
                                 <img
-                                    src="./pics/sandwich.png"
+                                    // src="./pics/sandwich.png"
+                                    src={urlFor(aboutInfo.item3)}
                                     className="sandwich"
                                 />
                             </div>

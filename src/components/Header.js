@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import sanityClient from '../client'
+import imageUrlBuilder from '@sanity/image-url';
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+    return builder.image(source);
+}
+
 export default function Header() {
+    const [logo, setlogo] = useState(
+        'image-45c8e6269aa3b3cd3f5e73ba8e04f470fc794c8c-266x146-png');
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "logo"]').then((data) => {
+            setlogo(data[0].logo.asset._ref)
+            console.log(logo)
+        }).catch(error => console.log(error))
+
+    }, []);
+
     const navList = ["About", "Menu", "Order"];
     const navButtons = navList.map((navName) => {
         const component = (
@@ -45,7 +63,8 @@ export default function Header() {
                     <li className='nav-item col-2 justify-content-center'>
                         <a href="/">
                             <img
-                                src="./pics/logo.jpg"
+                                // src="./pics/logo.jpg"
+                                src={urlFor(logo)}
                                 width="180"
                                 height="80"
                                 className="d-inline-block align-middle"

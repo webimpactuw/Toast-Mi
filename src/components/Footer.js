@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import sanityClient from '../client'
+import imageUrlBuilder from '@sanity/image-url';
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+    return builder.image(source);
+}
+
 export default function Footer(props) {
+
+    const [footerInfo, setFooterInfo] = useState(
+        'image-45c8e6269aa3b3cd3f5e73ba8e04f470fc794c8c-266x146-png');
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "logo"]').then((data) => {
+            setFooterInfo(data[0].logo.asset._ref)
+            console.log(footerInfo)
+        }).catch(error => console.log(error))
+
+    }, []);
+
     const navList = ["About", "Menu", "Order"];
     const navButtons = navList.map((navName) => {
         const component = (
@@ -37,7 +56,8 @@ export default function Footer(props) {
     </ul>);
     const logo = (<li className='justify-content-center'>
         <img
-            src="./pics/logo.png"
+            // src="./pics/logo.png"
+            src={urlFor(footerInfo)}
             width="180"
             height="80"
             className="d-inline-block align-middle"
