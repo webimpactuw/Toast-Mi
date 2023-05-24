@@ -1,14 +1,14 @@
-/* .shapes {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
+.shapes {
+    width: 100%;
+   
+}
 .greenRectangle {
-    /* margin-right: 10%; */
     margin-left: 10%;
     margin-right: 200%;
     margin-top: 10%;
+
     width: 45%;
-    height: 779px;
+    height: 300%;
 
     background: rgba(147, 199, 63, 0.24);
     border-radius: 68px;
@@ -38,13 +38,14 @@
 
 .greenRectangle > h3 {
     font-family: 'Gluten', cursive;
-    font-size: 490%;
     padding-left: 15%;
     overflow-wrap: break-all;
     padding-top: 25%;
     text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     line-height: 85%;
+    font-size: 500%;
+
 }
 
 #familyHistBlock > p {
@@ -128,6 +129,7 @@
     margin-left: 10%;
     align-items: center;
     text-align: center;
+    padding-bottom: 75%;
 
     color: #383838;
 
@@ -258,6 +260,7 @@
     /* display: flex; */
     align-items: center;
     text-align: center;
+    padding-top: 5%;
 
     color: #000000;
 }
