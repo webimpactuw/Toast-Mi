@@ -26,6 +26,30 @@ export default defineType({
             options: {
                 hotspot: true,
             },
+        }),
+        defineField({
+            name: 'drinks',
+            title: 'Drink Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+        defineField({
+            name: 'bahnmi',
+            title: 'Bahn Mi Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+        defineField({
+            name: 'plate',
+            title: 'Plate Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
         })
     ],
 })
