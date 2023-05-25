@@ -13,7 +13,7 @@ function urlFor(source) {
 export default function AboutPage(props) {
     const [aboutInfo, setAboutInfo] = useState({
         slogan: 'hello', familyHistory: 'history', image1: {
-            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+            asset: { _ref: 'image-ef131cde264a7247eb0f4aafacbdb08bcfd1951e-680x783-png' }
         }, image2: {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
         }, item1: {
@@ -24,10 +24,10 @@ export default function AboutPage(props) {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
         },
         action: {
-            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+            asset: { _ref: 'image-f3194c3e4f2d710443f99167c76250af561484df-1512x867-png' }
         },
         egg: {
-            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+            asset: { _ref: 'image-8866b9a786db3d6ff995131667123017ee398f0c-164x161-png' }
         }
     });
     useEffect(() => {
@@ -101,11 +101,11 @@ export default function AboutPage(props) {
                     </div>
                     <div id="lastSection">
                         <img
-                            src={aboutInfo.action.asset._ref}
+                            src={urlFor(aboutInfo.action.asset._ref)}
                             className="actionShot"
                         />
                         <img
-                            src={aboutInfo.action.asset._ref}
+                            src={urlFor(aboutInfo.egg.asset._ref)}
                             className="bottomEgg"
                         />
                     </div>

@@ -53,13 +53,13 @@ export default function HomePage(props) {
                 <div className="row" id="row">
                     <h1 class="menu-text">Find Something for you!</h1>
                     <div className="col" id='food-pics'>
-                        <img src={homeInfo.drinks.asset._ref} id="drink" />
+                        <img src={urlFor(homeInfo.drinks.asset._ref)} id="drink" />
                     </div>
                     <div className="col" id='food-pics'>
-                        <img src={homeInfo.bahnmi.asset._ref} id="bahn-mi" />
+                        <img src={urlFor(homeInfo.bahnmi.asset._ref)} id="bahn-mi" />
                     </div>
                     <div className="col" id='food-pics'>
-                        <img src={homeInfo.plate.asset._ref} id="plate" />
+                        <img src={urlFor(homeInfo.plate.asset._ref)} id="plate" />
                     </div>
                 </div>
 
