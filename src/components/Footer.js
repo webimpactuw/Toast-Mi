@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client'
+import FBLogo from './facebook.svg'
+import EmailLogo from './email.svg'
+import IGLogo from './instagram.svg'
+import YelpLogo from './yelp.svg'
 import imageUrlBuilder from '@sanity/image-url';
 const builder = imageUrlBuilder(sanityClient);
 
@@ -31,26 +35,26 @@ export default function Footer(props) {
 
     const socials = (<ul className='justify-content-start nav'>
         <li className="nav-item pt-2 px-1">
-            <a href="">
-                <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
+            <a href="https://www.instagram.com/toastmiplease/">
+                <img className="nav-icon" src={IGLogo} alt='' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href="https://www.facebook.com/people/Toast-Mi/100063613930385/">
-                <img className="nav-icon" src={'pics/facebook.svg'} alt='' />
+                <img className="nav-icon" src={FBLogo} alt='' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href="https://www.yelp.com/biz/toast-mi-tacoma">
-                <img className="nav-icon" src={'pics/yelp.svg'} alt='' />
+                <img className="nav-icon" src={YelpLogo} alt='' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href="mailto:test@gmail.com">
-                <img className="nav-icon" src={'pics/email.svg'} alt='' />
+                <img className="nav-icon" src={EmailLogo} alt='' />
             </a>
         </li>
     </ul>);

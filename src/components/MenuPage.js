@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import { Link, NavLink } from 'react-router-dom';
 import sanityClient from '../client'
 import imageUrlBuilder from '@sanity/image-url';
+import lBtn from './left.png';
+import rBtn from './right.png'
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -228,9 +230,9 @@ export function BanhMiMenu(props) {
                     <Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link>
                 </div> */}
                 <ul className='button-list first-page'>
-                    <li><button variant="info" className='page-button'><img src="pics/left.png"></img></button></li>
+                    <li><button variant="info" className='page-button'><img src={lBtn}></img></button></li>
                     <li><h2 className='page-label'>Page 1</h2></li>
-                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link></li>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src={rBtn}></img></button></Link></li>
                 </ul>
             </div>
         </div>
@@ -277,9 +279,9 @@ export function BowlsMenu(props) {
             <div className="card-container row p-3 justify-content-center menu-items">
                 {itemsChunk}
                 <div className='d-flex justify-content-between align-items-center page-nav'>
-                    <Link to='/menu/banhmi'><button variant="info" className='page-button'><img src="pics/left.png"></img></button></Link>
+                    <Link to='/menu/banhmi'><button variant="info" className='page-button'><img src={lBtn}></img></button></Link>
                     <h2 className='page-label'>Page 2</h2>
-                    <Link to='/menu/drinks'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link>
+                    <Link to='/menu/drinks'><button variant="info" className='page-button'><img src={rBtn}></img></button></Link>
                 </div>
             </div>
         </div>
@@ -326,9 +328,9 @@ export function DrinksMenu(props) {
             <div className="card-container row p-3 justify-content-center menu-items">
                 {itemsChunk}
                 <ul className='button-list third-page'>
-                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/left.png"></img></button></Link></li>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src={lBtn}></img></button></Link></li>
                     <li><h2 className='page-label'>Page 3</h2></li>
-                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link></li>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src={rBtn}></img></button></Link></li>
                 </ul>
             </div>
         </div>

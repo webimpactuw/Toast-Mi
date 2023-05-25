@@ -47,7 +47,7 @@ export default function Header() {
     const navButtons = navList.map((navName) => {
         const component = (
             <li key={navName} className="nav-item">
-                <Link className="nav-link link-dark active" to={"Toast-Mi/" + navName}>{navName}</Link>
+                <Link className="nav-link link-dark active" to={"/" + navName}>{navName}</Link>
             </li>);
         return component;
     })
