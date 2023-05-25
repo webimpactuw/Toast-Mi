@@ -54,7 +54,7 @@ export default function Footer(props) {
             </a>
         </li>
     </ul>);
-    const logo = (<li className='justify-content-center'>
+    const logo = (<div className='justify-content-center'>
         <img
             // src="./pics/logo.png"
             src={urlFor(footerInfo)}
@@ -63,7 +63,7 @@ export default function Footer(props) {
             className="d-inline-block align-middle"
             alt="logo image"
         />
-    </li>)
+    </div>)
     return (
         <div className='footer-container px-3 justify-content-center py-4'>
             <div className='row' >

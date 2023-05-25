@@ -70,7 +70,7 @@ export default function AboutPage(props) {
                     <div id="familyHistory">
                         <div className="greenRect">
                             <h3>family history</h3>
-                            <p>{aboutInfo.familyHistory} </p> </div>
+                            <p className='text-center'>{aboutInfo.familyHistory} </p> </div>
                     </div>
                     <div id="favoriteItems">
                         <h3>popular items</h3>

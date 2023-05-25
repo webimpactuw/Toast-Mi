@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import sanityClient from '../client'
+
 import imageUrlBuilder from '@sanity/image-url';
 const builder = imageUrlBuilder(sanityClient);
 
@@ -49,25 +50,24 @@ export default function Header() {
     })
     const socials = (<div className='nav justify-content-center'>
         <li className="nav-item pt-2 px-1">
-            <a href="">
-                <img className="nav-icon" src='pics/instagram.svg' alt='' />
+            <a href={socialInfo.instagram}>
+                <img className="nav-icon" src='/pics/instagram.svg' alt='ig' />
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href={socialInfo.facebook}>
-                <img className="nav-icon" src='pics/facebook.svg' alt='' />
-
+                <img className="nav-icon" src='/pics/facebook.svg' alt='fb' />
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href={socialInfo.yelp}>
-                <img className="nav-icon" src='pics/yelp.svg' alt='' />
+                <img className="nav-icon" src='/pics/yelp.svg' alt='yp' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
             <a href={socialInfo.email}>
-                <img className="nav-icon" src='/pics/email.svg' alt='' />
+                <img className="nav-icon" src='/pics/email.svg' alt='em' />
             </a>
 
         </li></div>);
