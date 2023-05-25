@@ -238,18 +238,32 @@ export function BanhMiMenu(props) {
 }
 
 export function BowlsMenu(props) {
-    const itemsChunk = BOWLS.map((item) => {
+    const [bowlInfo, setBowlInfo] = useState([{
+        title: 'Grilled Pork',
+        mainImage: {
+            asset: { _ref: 'image-b5f7c4a65b66fe4f6ca10a55b0376218747aca57-128x123-png' }
+        },
+        description: 'text'
+    }]);
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "bowl"]|order(orderNum){title,description,mainImage}').then((data) => {
+            setBowlInfo(data)
+            console.log(data)
+        })
+
+    }, []);
+    const itemsChunk = bowlInfo.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
+                            <h5 className="card-title">{item.title}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={"pics/bowls/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" />
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
                     </div>
                 </div>
             </div>
@@ -273,18 +287,32 @@ export function BowlsMenu(props) {
 }
 
 export function DrinksMenu(props) {
-    const itemsChunk = DRINKS.map((item) => {
+    const [drinkInfo, setDrinkInfo] = useState([{
+        title: 'Thai Tea',
+        mainImage: {
+            asset: { _ref: 'image-3902ac1dd5339043bff238cf848fd931606c80aa-125x120-png' }
+        },
+        description: 'text'
+    }]);
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "drinks"]|order(orderNum){title,description,mainImage}').then((data) => {
+            setDrinkInfo(data)
+            console.log(data)
+        })
+
+    }, []);
+    const itemsChunk = drinkInfo.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
+                            <h5 className="card-title">{item.title}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={"pics/drinks/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" />
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
                     </div>
                 </div>
             </div>
