@@ -19,7 +19,26 @@ export default function Header() {
         }).catch(error => console.log(error))
 
     }, []);
-
+    const [socialInfo, setSocialInfo] = useState({
+        cloverGL: "https://www.clover.com/online-ordering/toast-mi-seattle",
+        cloverTC: "https://www.clover.com/online-ordering/toast-mi-tacoma",
+        doordashGL: "https://www.doordash.com/store/toast-mi-seattle-23738193/",
+        doordashTC: "https://www.doordash.com/store/toast-mi-tacoma-1633195/",
+        email: "toastmigreenlake@gmail.com",
+        facebook: "https://www.facebook.com/people/Toast-Mi/100063613930385/",
+        grubhubGL: "https://www.grubhub.com/restaurant/toast-mi-green-lake-7130-woodlawn-avenue-northeast-seattle/5464192",
+        grubhubTC: "https://www.grubhub.com/restaurant/toast-mi-tacoma-2602-n-proctor-st-suite-d-tacoma/5465640",
+        instagram: "https://www.instagram.com/toastmiplease/",
+        ubereatsGL: "https://www.ubereats.com/store/toast-mi-green-lake/fNTM_Y0TUa6gJ4q0fIasog",
+        ubereatsTC: "https://www.ubereats.com/store/toast-mi/nin9YrxTST6q51KUT0l_5w",
+        yelp: "https://www.yelp.com/biz/toast-mi-tacoma"
+    });
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "links"]').then((data) => {
+            console.log(data[0])
+            setSocialInfo(data[0])
+        }).catch(error => console.log(error))
+    }, [])
     const navList = ["About", "Menu", "Order"];
     const navButtons = navList.map((navName) => {
         const component = (
@@ -31,24 +50,24 @@ export default function Header() {
     const socials = (<div className='nav justify-content-center'>
         <li className="nav-item pt-2 px-1">
             <a href="">
-                <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
+                <img className="nav-icon" src='pics/instagram.svg' alt='' />
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
-            <a href="https://www.facebook.com/people/Toast-Mi/100063613930385/">
-                <img className="nav-icon" src={'pics/facebook.svg'} alt='' />
+            <a href={socialInfo.facebook}>
+                <img className="nav-icon" src='pics/facebook.svg' alt='' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
-            <a href="https://www.yelp.com/biz/toast-mi-tacoma">
-                <img className="nav-icon" src={'pics/yelp.svg'} alt='' />
+            <a href={socialInfo.yelp}>
+                <img className="nav-icon" src='pics/yelp.svg' alt='' />
 
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
-            <a href="mailto:test@gmail.com">
-                <img className="nav-icon" src={'pics/email.svg'} alt='' />
+            <a href={socialInfo.email}>
+                <img className="nav-icon" src='/pics/email.svg' alt='' />
             </a>
 
         </li></div>);
@@ -86,7 +105,7 @@ export default function Header() {
                     <Navbar.Brand className='mx-auto' href="#home">
                         <a href="/">
                             <img
-                                src="./pics/logo.jpg"
+                                src={urlFor(logo)}
                                 width="180"
                                 height="80"
                                 className="d-inline-block align-middle"

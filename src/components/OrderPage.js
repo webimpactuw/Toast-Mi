@@ -17,6 +17,26 @@ export default function OrderPage(props) {
         }).catch(error => console.log(error))
 
     }, []);
+    const [orderInfo, setOrderInfo] = useState({
+        cloverGL: "https://www.clover.com/online-ordering/toast-mi-seattle",
+        cloverTC: "https://www.clover.com/online-ordering/toast-mi-tacoma",
+        doordashGL: "https://www.doordash.com/store/toast-mi-seattle-23738193/",
+        doordashTC: "https://www.doordash.com/store/toast-mi-tacoma-1633195/",
+        email: "toastmigreenlake@gmail.com",
+        facebook: "https://www.facebook.com/people/Toast-Mi/100063613930385/",
+        grubhubGL: "https://www.grubhub.com/restaurant/toast-mi-green-lake-7130-woodlawn-avenue-northeast-seattle/5464192",
+        grubhubTC: "https://www.grubhub.com/restaurant/toast-mi-tacoma-2602-n-proctor-st-suite-d-tacoma/5465640",
+        instagram: "https://www.instagram.com/toastmiplease/",
+        ubereatsGL: "https://www.ubereats.com/store/toast-mi-green-lake/fNTM_Y0TUa6gJ4q0fIasog",
+        ubereatsTC: "https://www.ubereats.com/store/toast-mi/nin9YrxTST6q51KUT0l_5w",
+        yelp: "https://www.yelp.com/biz/toast-mi-tacoma"
+    });
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "links"]').then((data) => {
+            console.log(data[0])
+            setOrderInfo(data[0])
+        }).catch(error => console.log(error))
+    }, [])
     return (
 
         <div>
@@ -48,10 +68,10 @@ export default function OrderPage(props) {
                                 <div className='row'>
                                     <div className='col'>
                                         <div className='websiteNames'>
-                                            <p><a href='url'>Doordash</a></p>
-                                            <p><a href='url'>Ubereats</a></p>
-                                            <p><a href='url'>Grubhub</a></p>
-                                            <p><a href='url'>Clover</a></p>
+                                            <p><a href={orderInfo.doordashTC}>Doordash</a></p>
+                                            <p><a href={orderInfo.ubereatsTC}>Ubereats</a></p>
+                                            <p><a href={orderInfo.grubhubTC}>Grubhub</a></p>
+                                            <p><a href={orderInfo.cloverTC}>Clover</a></p>
                                         </div>
                                     </div>
 
@@ -103,10 +123,10 @@ export default function OrderPage(props) {
                                 <div className='row'>
                                     <div className='col'>
                                         <div className='websiteNames'>
-                                            <p><a href='url'>Doordash</a></p>
-                                            <p><a href='url'>Ubereats</a></p>
-                                            <p><a href='url'>Grubhub</a></p>
-                                            <p><a href='url'>Clover</a></p>
+                                            <p><a href={orderInfo.doordashGL}>Doordash</a></p>
+                                            <p><a href={orderInfo.ubereatsGL}>Ubereats</a></p>
+                                            <p><a href={orderInfo.grubhubGL}>Grubhub</a></p>
+                                            <p><a href={orderInfo.cloverGL}>Clover</a></p>
                                         </div>
                                     </div>
 

@@ -59,5 +59,10 @@ export default defineType({
             title: 'Email',
             type: 'string',
         }),
+        defineField({
+            name: 'facebook',
+            title: 'Facebook',
+            type: 'string',
+        })
     ],
 })
