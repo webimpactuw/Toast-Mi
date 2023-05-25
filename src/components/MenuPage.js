@@ -103,16 +103,40 @@ const DRINKS = [
 ];
 
 export function MenuRoot(props) {
+    const [menuImage, setMenuImage] = useState({
+        image1: {
+            asset: { _ref: 'image-15fa354bc0b7402f721f8a6c17f985abf48719ca-268x279-png' }
+        },
+        image2: {
+            asset: { _ref: 'image-97a2e903494db429ab7ce593a66ae4ceecff5143-270x279-png' }
+        },
+        image3: {
+            asset: { _ref: 'image-11c95e4a5807206ab2813a7aefd8b86f03581296-269x280-png' }
+        },
+        image4: {
+            asset: { _ref: 'image-5f1997cb16f8b41ecd7181838b7d049e006ca34f-271x279-png' }
+        },
+        image5: {
+            asset: { _ref: 'image-1ef66eba1cfd48d12f677b5810beaa05b2acf27f-268x279-png' }
+        }
+    });
+    useEffect(() => {
+        sanityClient.fetch('*[_type == "menu"]').then((data) => {
+            setMenuImage(data[0])
+            console.log(data[0])
+        })
+
+    }, []);
     return (
         <div className='container'>
             <div className='row'>
                 <div className='col-3 img-col'>
                     {/* <img src={urlFor(menuInfo[0].mainImage.asset._ref)} /> */}
-                    <img src='/pics/menu1.png' />
-                    <img src='/pics/menu2.png' />
-                    <img src='/pics/menu3.png' />
-                    <img src='/pics/menu4.png' />
-                    <img src='/pics/menu5.png' />
+                    <img src={urlFor(menuImage.image1.asset._ref)} />
+                    <img src={urlFor(menuImage.image2.asset._ref)} />
+                    <img src={urlFor(menuImage.image3.asset._ref)} />
+                    <img src={urlFor(menuImage.image4.asset._ref)} />
+                    <img src={urlFor(menuImage.image5.asset._ref)} />
                 </div>
                 <div className='col-9'>
                     <div className='header-box d-flex flex-column justify-content-center'>
