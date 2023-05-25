@@ -11,13 +11,13 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='menu' element={<MenuRoot />} ></Route>
+        <Route path='Toast-Mi/menu' element={<MenuRoot />} ></Route>
         <Route index path='/Toast-Mi' element={<Home />} ></Route>
-        <Route path='order' element={<Order />} ></Route>
-        <Route path='about' element={<About />} ></Route>
-        <Route path='menu/banhmi' element={<BanhMiMenu />}></Route>
-        <Route path='menu/bowls' element={<BowlsMenu />}></Route>
-        <Route path='menu/drinks' element={<DrinksMenu />}></Route>
+        <Route path='Toast-Mi/order' element={<Order />} ></Route>
+        <Route path='Toast-Mi/about' element={<About />} ></Route>
+        <Route path='Toast-Mi/menu/banhmi' element={<BanhMiMenu />}></Route>
+        <Route path='Toast-Mi/menu/bowls' element={<BowlsMenu />}></Route>
+        <Route path='Toast-Mi/menu/drinks' element={<DrinksMenu />}></Route>
       </Routes>
       <Footer />
     </div>
