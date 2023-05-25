@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import sanityClient from '../client'
 import imageUrlBuilder from '@sanity/image-url';
 
@@ -156,7 +156,7 @@ export function MenuRoot(props) {
                     </div>
                     <div className='menu-chunk'>
                         <div className='d-flex justify-content-between'>
-                            <h2>RICE + SALAD BOWL</h2>
+                            <NavLink to='bowls'><h2>RICE + SALAD BOWL</h2></NavLink>
                             <span>2</span>
                         </div>
                         <ul>
@@ -168,7 +168,7 @@ export function MenuRoot(props) {
                     </div>
                     <div className='menu-chunk'>
                         <div className='d-flex justify-content-between'>
-                            <h2>DRINKS</h2>
+                            <NavLink to='drinks'><h2>DRINKS</h2></NavLink>
                             <span>3</span>
                         </div>
                         <ul>
@@ -179,7 +179,6 @@ export function MenuRoot(props) {
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     )
@@ -199,12 +198,13 @@ export function BanhMiMenu(props) {
     }, []);
     const itemsChunk = menuInfo.map((item) => {
         const component = (
-            <div className="card col-md-5 col-12 m-2 p-3">
+            <div className="card col-md-5 col-12 m-2 p-4">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
-                            <h5 className="card-title">{item.title}</h5>
-                            <p className="card-text">{item.description}</p>
+                            <h5 className="card-title text-start">{item.title}</h5>
+                            <p className="card-text text-start">{item.description}</p>
+                            {/* <p className="card-text text-start">{item.price}</p> */}
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
@@ -222,10 +222,16 @@ export function BanhMiMenu(props) {
             <h1 className='menu-type'>Banh Mi</h1>
             <div className="card-container row p-3 justify-content-center menu-items">
                 {itemsChunk}
-                <div className='d-flex d-flex justify-content centeralign-items-center'>
-                    <h1>Page 1</h1>
-                    <Button>Test</Button>
-                </div>
+                {/* <div className='d-flex justify-content-between align-items-center page-nav'>
+                    <button variant="info" className='page-button'><img src="pics/left.png"></img></button>
+                    <h2 className='page-label'>Page 1</h2>
+                    <Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link>
+                </div> */}
+                <ul className='button-list first-page'>
+                    <li><button variant="info" className='page-button'><img src="pics/left.png"></img></button></li>
+                    <li><h2 className='page-label'>Page 1</h2></li>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link></li>
+                </ul>
             </div>
         </div>
     )
@@ -253,12 +259,13 @@ export function BowlsMenu(props) {
 
     return (
         <div className='container'>
-            <h1 className='menu-type'>Banh Mi</h1>
+            <h1 className='menu-type'>Rice and Salad Bowls</h1>
             <div className="card-container row p-3 justify-content-center menu-items">
                 {itemsChunk}
-                <div className='d-flex d-flex justify-content centeralign-items-center'>
-                    <h1>Page 1</h1>
-                    <Button>Test</Button>
+                <div className='d-flex justify-content-between align-items-center page-nav'>
+                    <Link to='/menu/banhmi'><button variant="info" className='page-button'><img src="pics/left.png"></img></button></Link>
+                    <h2 className='page-label'>Page 2</h2>
+                    <Link to='/menu/drinks'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link>
                 </div>
             </div>
         </div>
@@ -287,13 +294,14 @@ export function DrinksMenu(props) {
 
     return (
         <div className='container'>
-            <h1 className='menu-type'>Banh Mi</h1>
+            <h1 className='menu-type'>Drinks</h1>
             <div className="card-container row p-3 justify-content-center menu-items">
                 {itemsChunk}
-                <div className='d-flex d-flex justify-content centeralign-items-center'>
-                    <h1>Page 1</h1>
-                    <Button>Test</Button>
-                </div>
+                <ul className='button-list third-page'>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/left.png"></img></button></Link></li>
+                    <li><h2 className='page-label'>Page 3</h2></li>
+                    <li><Link to='/menu/bowls'><button variant="info" className='page-button'><img src="pics/right.png"></img></button></Link></li>
+                </ul>
             </div>
         </div>
     )

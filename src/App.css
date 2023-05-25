@@ -50,7 +50,7 @@
   letter-spacing: 0.1em;
 }
 
-.header > h1 {
+.header>h1 {
   font-weight: 600;
   font-size: 300%;
 }
@@ -247,4 +247,58 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
+}
+
+.page-label {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.btn-info, .page-button {
+  width: 163px;
+  height: 60px;
+  background: #FAEDCD;
+  border-radius: 50px;
+  border: none;
+}
+
+.page-nav {
+  padding: 3% 0;
+}
+
+.first-page li:first-child {
+  margin-right: auto;
+  visibility: hidden;
+}
+
+.first-page li:last-child {
+  margin-left: auto;
+}
+
+.third-page li:first-child {
+  margin-right: auto;
+}
+
+.third-page li:last-child {
+  margin-left: auto;
+  visibility: hidden;
+}
+
+.button-list li {
+  display: flex;
+  margin: 1px;
+  padding: 5px;
+}
+
+.button-list {
+  padding: 3% 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
