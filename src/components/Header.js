@@ -82,7 +82,7 @@ export default function Header() {
                         {navButtons}
                     </div>
                     <li className='nav-item col-2 justify-content-center'>
-                        <a href="/">
+                        <a href="/Toast-Mi">
                             <img
                                 // src="./pics/logo.jpg"
                                 src={urlFor(logo)}

@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='menu' element={<MenuRoot />} ></Route>
-        <Route index element={<Home />} ></Route>
+        <Route index path='/Toast-Mi' element={<Home />} ></Route>
         <Route path='order' element={<Order />} ></Route>
         <Route path='about' element={<About />} ></Route>
         <Route path='menu/banhmi' element={<BanhMiMenu />}></Route>
