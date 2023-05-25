@@ -140,6 +140,9 @@
 .websiteNames>p>a {
   color: #282c34
 }
+.websiteNames p a{
+  text-decoration: underline;
+}
 
 .dottedLine {
   border-top: dotted 7px;

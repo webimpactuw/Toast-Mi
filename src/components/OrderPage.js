@@ -77,10 +77,10 @@ export default function OrderPage(props) {
 
                                     <div className='col'>
                                         <div className='prices'>
+                                            {/* <p>0.00</p>
                                             <p>0.00</p>
                                             <p>0.00</p>
-                                            <p>0.00</p>
-                                            <p>0.00</p>
+                                            <p>0.00</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -132,10 +132,10 @@ export default function OrderPage(props) {
 
                                     <div className='col'>
                                         <div className='prices'>
+                                            {/* <p>0.00</p>
                                             <p>0.00</p>
                                             <p>0.00</p>
-                                            <p>0.00</p>
-                                            <p>0.00</p>
+                                            <p>0.00</p> */}
                                         </div>
                                     </div>
                                 </div>
