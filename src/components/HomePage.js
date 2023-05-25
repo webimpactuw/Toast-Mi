@@ -41,7 +41,7 @@ export default function HomePage(props) {
                         <div id="textBox">
                             <h2 class="welcome-text">Welcome to Toast Mi</h2>
                             <p class="paragraph-text">{homeInfo.homeInfo}</p>
-                            <a href="./About"><button class="about-us-button">About us</button></a>
+                            <a href="Toast-Mi#/about"><button class="about-us-button">About us</button></a>
                         </div>
                     </div>
                     <div className="col">
