@@ -34,7 +34,7 @@ export default function HomePage(props) {
 
             <div class="box">
                 <div className="row" id="row">
-                    <h1 class="slogan-text">just bahn mi.</h1>
+                    <h1 class="slogan-text">just banh mi.</h1>
                 </div>
                 <div className="row" id="row">
                     <div className="col">
