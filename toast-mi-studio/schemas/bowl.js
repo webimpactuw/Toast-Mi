@@ -23,7 +23,7 @@ export default defineType({
         }),
         defineField({
             name: 'mainImage',
-            title: 'Main image',
+            title: 'Image',
             type: 'image',
             options: {
                 hotspot: true,
