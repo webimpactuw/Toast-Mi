@@ -55,6 +55,23 @@ export default defineType({
             options: {
                 hotspot: true,
             },
-        })
+        }),
+        defineField({
+            name: 'action',
+            title: 'Action Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+        defineField({
+            name: 'egg',
+            title: 'Egg Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+
     ],
 })

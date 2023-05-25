@@ -22,11 +22,18 @@ export default function AboutPage(props) {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
         }, item3: {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        },
+        action: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
+        },
+        egg: {
+            asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
         }
     });
     useEffect(() => {
         sanityClient.fetch('*[_type == "about"]').then((data) => {
             setAboutInfo(data[0])
+            console.log(aboutInfo)
         })
 
     }, []);
@@ -94,11 +101,11 @@ export default function AboutPage(props) {
                     </div>
                     <div id="lastSection">
                         <img
-                            src="./pics/actionShot.png"
+                            src={aboutInfo.action.asset._ref}
                             className="actionShot"
                         />
                         <img
-                            src="./pics/bottomEgg.png"
+                            src={aboutInfo.action.asset._ref}
                             className="bottomEgg"
                         />
                     </div>
