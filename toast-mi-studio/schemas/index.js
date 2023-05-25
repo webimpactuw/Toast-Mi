@@ -6,5 +6,6 @@ import menu from './menu'
 import bahnmi from './bahnmi'
 import bowl from './bowl'
 import drinks from './drinks'
+import links from './links'
 
-export const schemaTypes = [logo, home, about, order, menu, bahnmi, bowl, drinks]
+export const schemaTypes = [logo, home, about, order, menu, bahnmi, bowl, drinks, links]

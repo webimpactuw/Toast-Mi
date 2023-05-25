@@ -32,7 +32,6 @@ export default function Header() {
         <li className="nav-item pt-2 px-1">
             <a href="">
                 <img className="nav-icon" src={'pics/instagram.svg'} alt='' />
-
             </a>
         </li>
         <li className="nav-item pt-2 px-1">
