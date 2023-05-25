@@ -12,6 +12,14 @@ export default defineType({
             type: 'text',
         }),
         defineField({
+            name: 'aboutPic',
+            title: 'About Us Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        }),
+        defineField({
             name: 'image1',
             title: 'Green Lake Image',
             type: 'image',

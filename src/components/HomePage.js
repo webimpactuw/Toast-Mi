@@ -11,6 +11,7 @@ function urlFor(source) {
 export default function HomePage(props) {
     const [homeInfo, setHomeInfo] = useState({
         homeInfo: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+        aboutPic: { asset: { _ref: 'image-ce2652ebcdb1fee0e2ad6465dddb8db94621f34c-519x354-png' } },
         image1: { asset: { _ref: 'image-ce2652ebcdb1fee0e2ad6465dddb8db94621f34c-519x354-png' } },
         image2: { asset: { _ref: 'image-ec1ea22308dc3425c1e5b4dc6d5f46efb7253725-519x354-png' } },
         drinks: { asset: { _ref: 'image-51a772fa56a5956cdd2969fbb5961a7447a8f074-431x249-png' } },
@@ -45,7 +46,7 @@ export default function HomePage(props) {
                     </div>
                     <div className="col">
                         <div id="picBox">
-                            <img src="./pics/about-us-together.png" />
+                            <img src={urlFor(homeInfo.aboutPic.asset._ref)} />
                         </div>
                     </div>
                 </div>
