@@ -65,7 +65,7 @@ export default function HomePage(props) {
                 </div>
 
                 <div className="row" id="row">
-                    <a href="./Menu"><button class="menu-button">Check out our full menu!</button></a>
+                    <a href="#/menu"><button class="menu-button">Check out our full menu!</button></a>
                 </div>
 
                 <div className="row" id="row">
