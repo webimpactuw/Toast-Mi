@@ -81,13 +81,13 @@ export default function Footer(props) {
 
                 </div> */}
                 <div className='col justify-content-center tacoma'>
-                    <div className='text-start'>Tacoma</div>
+                    <div className='text-start'>Greenlake</div>
                     <div className='text-start'>(253)-245-2246</div>
                     <div className='text-start'>7130 Woodlawn Ave NE </div>
                     <div className='text-start'>Seattle, WA 98115</div>
                 </div>
                 <div className='col justify-content-center greenlake'>
-                    <div className='text-start justify-content-center '>Greenlake</div>
+                    <div className='text-start justify-content-center '>Tacoma</div>
                     <div className='text-start'>(253)-245-2246</div>
                     <div className='text-start'>2602 N Proctor St Suite D</div>
                     <div className='text-start'>Tacoma, WA 98407</div>
