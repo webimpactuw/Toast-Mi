@@ -228,7 +228,7 @@ p {
 
 .menu-items .card {
   background: #FAEDCD;
-  border-radius: 159px;
+  border-radius: 150px;
   border: none;
 }
 
@@ -240,8 +240,13 @@ p {
   font-family: 'Baloo Bhai 2';
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.9rem;
   line-height: 36px;
+  /* margin-top: 55px; */
+}
+
+.offset > h5 {
+  margin-top: 55px;
 }
 
 .menu-items p {

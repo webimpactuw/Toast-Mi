@@ -14,7 +14,7 @@ function urlFor(source) {
 const BANH_MI = [
     {
         name: "The Mekong (Grilled Pork)",
-        description: "Grilled Pork"
+        description: "Grilled Pork seasoned with our sauces combined with fresh veggies"
     },
     {
         name: "The Notre Dame (Shredded Chicken)",
@@ -201,7 +201,7 @@ export function BanhMiMenu(props) {
     const itemsChunk = menuInfo.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-4">
-                <div className="row g-0">
+                <div className="row g-0 p-3">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
                             <h5 className="card-title text-start">{item.title}</h5>
@@ -211,7 +211,7 @@ export function BanhMiMenu(props) {
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
                         {/* <img src={"pics/banhmi/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" /> */}
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="140" height="90" />
                     </div>
                 </div>
             </div>
@@ -259,13 +259,13 @@ export function BowlsMenu(props) {
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
-                        <div className="card-body">
+                        <div className="card-body offset">
                             <h5 className="card-title">{item.title}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="90" />
                     </div>
                 </div>
             </div>
@@ -308,13 +308,13 @@ export function DrinksMenu(props) {
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
-                        <div className="card-body">
+                        <div className="card-body offset">
                             <h5 className="card-title">{item.title}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="82" />
+                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="100" />
                     </div>
                 </div>
             </div>
