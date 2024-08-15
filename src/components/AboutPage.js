@@ -12,7 +12,10 @@ function urlFor(source) {
 // always pull, edit, commit, pull again, and then push
 export default function AboutPage(props) {
     const [aboutInfo, setAboutInfo] = useState({
-        slogan: 'hello', familyHistory: 'history', image1: {
+        slogan: 'hello', 
+        familyHistory: 'history', 
+        
+        image1: {
             asset: { _ref: 'image-ef131cde264a7247eb0f4aafacbdb08bcfd1951e-680x783-png' }
         }, image2: {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
@@ -43,7 +46,7 @@ export default function AboutPage(props) {
             <div class="sloganSection">
                 <div className="shapes">
                     <div className="greenRectangle">
-                        <h3 id="slogan">slogan/ funfact</h3>
+                        <h3 id="slogan">Banh Mi <br/> + more!</h3>
                         <p id="sloganText">{aboutInfo.slogan}</p>
                     </div>
                     <img
@@ -97,7 +100,7 @@ export default function AboutPage(props) {
                                 />
                             </div>
                         </div>
-                        <h4><a href="#/order">link to order...</a></h4>
+                        <h4><a href="#/order">Order Now</a></h4>
                     </div>
                     <div id="lastSection">
                         <img
