@@ -100,7 +100,7 @@ export default function AboutPage(props) {
                                 />
                             </div>
                         </div>
-                        <h4><a href="#/order">Order Now</a></h4>
+                        <h4><a href="#/order">Order Now!</a></h4>
                     </div>
                     <div id="lastSection">
                         <img
