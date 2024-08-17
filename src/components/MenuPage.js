@@ -14,93 +14,115 @@ function urlFor(source) {
 const BANH_MI = [
     {
         name: "The Mekong (Grilled Pork)",
-        description: "Grilled Pork seasoned with our sauces combined with fresh veggies"
+        description: "Grilled Pork seasoned with our sauces combined with fresh veggies",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/1350857a30b761908b276fdaf1aefaa6e77a6ae2-124x82.png")
     },
     {
         name: "The Notre Dame (Shredded Chicken)",
-        description: "Shredded Chicken seasoned with our sauces and tossed with caramelized onion"
+        description: "Shredded Chicken seasoned with our sauces and tossed with caramelized onion",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/b45de030fcbb50994a25067caa8ca8f0a20ea595-124x82.png")
     },
     {
         name: "The Sapa (Sautéed Tofu)",
-        description: "Great Vegetarian Option! Tofu Sautéed in lemongrass and coconut milk."
+        description: "Great Vegetarian Option! Tofu Sautéed in lemongrass and coconut milk.",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/646eaa57489f21ae14255717ae5632aef89ced81-124x82.png")
     },
     {
         name: "The Hoi An (Classic Cold Cuts)",
-        description: "A combination of different traditional Vietnamese cold cuts comes together"
+        description: "A combination of different traditional Vietnamese cold cuts comes together",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/857affd8606af4c279fca70423c68313a1eebd4b-124x82.png")
     },
     {
         name: "The Dragon Bridge (Meatballs)",
-        description: "Traditional Vietnamese pork meatballs with tomato sauce."
+        description: "Traditional Vietnamese pork meatballs with tomato sauce.",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/5c15a8a6ee68ed5b9cd07311b0389b1830cfdf96-124x82.png")
     },
     {
         name: "The Ha Long Bay (Grilled Beef)",
-        description: "Shredded Chicken seasoned with our sauces and tossed with caramelized onion"
+        description: "Shredded Chicken seasoned with our sauces and tossed with caramelized onion",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/5bce2b568669cb1a243caa32e4e810df0f96f5a8-124x82.png")
     },
     {
         name: "The Imperial City (House Special)",
-        description: "Our House special Banh Mi includes 2 types of meat of your choice, with a sunny-side-up egg on top!"
+        description: "Our House special Banh Mi includes 2 types of meat of your choice, with a sunny-side-up egg on top!",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/1f1c59918c16334c8092d7f8a669b71a000f5929-124x82.png")
     }
 ];
 
 const BOWLS = [
     {
         name: "Grilled Pork",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/b5f7c4a65b66fe4f6ca10a55b0376218747aca57-128x123.png")
     },
     {
         name: "Shredded Chicken",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/27ed2d0d00a13c6e4ad40cc493db05e55acc615e-128x123.png")
     },
     {
         name: "Grilled Beef",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/9caa7ad1e235d2160a62b914edfb951b5d43a465-128x123.png")
     },
     {
         name: "Sauteed Tofu",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/febfc86cd18e14e0e18c3a820dfa9ff5a6222af4-128x123.png")
     },
     {
         name: "House Special Bowl",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/045ee2ce6cc7aa5e26465539f624dc36b204303b-128x123.png")
     },
 ];
 
 const DRINKS = [
     {
         name: "Matcha Mango",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/c8164c0a2b8b48387540337938d750b31123b11d-125x120.png")
     },
     {
         name: "Taro Oreo",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/854b856f8df7504716c9aa95c32ff86fbf75e7d8-125x120.png")
     },
     {
         name: "Strawberry Cheesecake",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/3c2f7e97104ef51630d9d11344414f92372d796d-125x120.png")
     },
     {
         name: "Coconut Coffee",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/3ab663b426e24d20aca9fc5c1067c11e7b7beebc-125x120.png")
     },
     {
         name: "Brown Sugar Fresh Milk Boba",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/2afec32e104324535d0984dfc7e15069bd8f88ff-125x120.png")
     },
     {
         name: "Classic Milk Tea",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/90a0f76388b8e42f4528f14f9c501ecf94c389a8-125x120.png")
     },
     {
         name: "Fresh Fruit Tea",
-        description: "Green tea with your choice of Fruit! (Strawberry, Mango, Peach)"
+        // description: "Green tea with your choice of Fruit! (Strawberry, Mango, Peach)",
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/6c179ebd98c72804ea78ecddd1b85434fe5d1abd-125x120.png")
     },
     {
         name: "Thai Tea",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/3902ac1dd5339043bff238cf848fd931606c80aa-125x120.png")
     },
     {
         name: "Vietnamese Coffee",
-        description: ""
+        description: "",
+        image: urlFor("https://cdn.sanity.io/images/j48r7c81/production/e60d82c2b5550d8dbf3837910cc04921ca8c10a0-125x120.png")
     },
 ];
 
@@ -122,13 +144,13 @@ export function MenuRoot(props) {
             asset: { _ref: 'image-1ef66eba1cfd48d12f677b5810beaa05b2acf27f-268x279-png' }
         }
     });
-    useEffect(() => {
-        sanityClient.fetch('*[_type == "menu"]').then((data) => {
-            setMenuImage(data[0])
-            console.log(data[0])
-        })
+    // useEffect(() => {
+    //     sanityClient.fetch('*[_type == "menu"]').then((data) => {
+    //         setMenuImage(data[0])
+    //         console.log(data[0])
+    //     })
 
-    }, []);
+    // }, []);
     return (
         <div className='container'>
             <div className='row'>
@@ -192,26 +214,29 @@ export function BanhMiMenu(props) {
             asset: { _ref: 'image-646eaa57489f21ae14255717ae5632aef89ced81-124x82-png' }
         }
     }]);
-    useEffect(() => {
-        sanityClient.fetch('*[_type == "bahnmi"]|order(orderNum){title,description,mainImage}').then((data) => {
-            setMenuInfo(data)
-        })
+    // useEffect(() => {
+    //     sanityClient.fetch('*[_type == "bahnmi"]|order(orderNum){title,description,mainImage}').then((data) => {
+    //         setMenuInfo(data)
+    //     })
 
-    }, []);
-    const itemsChunk = menuInfo.map((item) => {
+    // }, []);
+    // const itemsChunk = menuInfo.map((item) => {
+    const itemsChunk = BANH_MI.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-4">
                 <div className="row g-0 p-3">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body">
-                            <h5 className="card-title text-start">{item.title}</h5>
+                            {/* <h5 className="card-title text-start">{item.title}</h5> */}
+                            <h5 className="card-title text-start">{item.name}</h5>
                             <p className="card-text text-start">{item.description}</p>
                             {/* <p className="card-text text-start">{item.price}</p> */}
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
                         {/* <img src={"pics/banhmi/" + item.name + ".png"} className="" alt={item.name} width="124" height="82" /> */}
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="140" height="90" />
+                        {/* <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="140" height="90" /> */}
+                        <img src={item.image} alt={item.name} width="160" height="95"/>
                     </div>
                 </div>
             </div>
@@ -247,25 +272,27 @@ export function BowlsMenu(props) {
         },
         description: 'text'
     }]);
-    useEffect(() => {
-        sanityClient.fetch('*[_type == "bowl"]|order(orderNum){title,description,mainImage}').then((data) => {
-            setBowlInfo(data)
-            console.log(data)
-        })
+    // useEffect(() => {
+    //     sanityClient.fetch('*[_type == "bowl"]|order(orderNum){title,description,mainImage}').then((data) => {
+    //         setBowlInfo(data)
+    //         console.log(data)
+    //     })
 
-    }, []);
-    const itemsChunk = bowlInfo.map((item) => {
+    // }, []);
+    // const itemsChunk = bowlInfo.map((item) => {
+    const itemsChunk = BOWLS.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body offset">
-                            <h5 className="card-title">{item.title}</h5>
+                            <h5 className="card-title">{item.name}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="90" />
+                        {/* <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="90" /> */}
+                        <img src={item.image} className="" alt={item.name} width="124" height="90" />
                     </div>
                 </div>
             </div>
@@ -296,25 +323,27 @@ export function DrinksMenu(props) {
         },
         description: 'text'
     }]);
-    useEffect(() => {
-        sanityClient.fetch('*[_type == "drinks"]|order(orderNum){title,description,mainImage}').then((data) => {
-            setDrinkInfo(data)
-            console.log(data)
-        })
+    // useEffect(() => {
+    //     sanityClient.fetch('*[_type == "drinks"]|order(orderNum){title,description,mainImage}').then((data) => {
+    //         setDrinkInfo(data)
+    //         console.log(data)
+    //     })
 
-    }, []);
-    const itemsChunk = drinkInfo.map((item) => {
+    // }, []);
+    // const itemsChunk = drinkInfo.map((item) => {
+    const itemsChunk = DRINKS.map((item) => {
         const component = (
             <div className="card col-md-5 col-12 m-2 p-3">
                 <div className="row g-0">
                     <div className="col-8 d-flex align-items-center justify-content-center flex-column">
                         <div className="card-body offset">
-                            <h5 className="card-title">{item.title}</h5>
+                            <h5 className="card-title">{item.name}</h5>
                             <p className="card-text">{item.description}</p>
                         </div>
                     </div>
                     <div className="col-4  d-flex align-items-center justify-content-center flex-column item-img">
-                        <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="100" />
+                        {/* <img src={urlFor(item.mainImage.asset._ref)} className="" alt={item.name} width="124" height="100" /> */}
+                        <img src={item.image} className="" alt={item.name} width="124" height="100" />
                     </div>
                 </div>
             </div>
