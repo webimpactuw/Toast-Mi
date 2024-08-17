@@ -5,6 +5,7 @@ import sanityClient from '../client'
 import imageUrlBuilder from '@sanity/image-url';
 import lBtn from './left.png';
 import rBtn from './right.png'
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -168,8 +169,13 @@ export function MenuRoot(props) {
                     </div>
                     <div className='menu-chunk'>
                         <div className='d-flex justify-content-between'>
-                            <NavLink to='banhmi'><h2>BANH MI</h2></NavLink>
-                            <span>1</span>
+                            <NavLink to='banhmi'><h2>BANH MI</h2>
+                            {/* <FaRegArrowAltCircleRight size="50px" style={{marginLeft: '-100px'}}/> */}</NavLink>
+                            {/* <span>1</span> */}
+                            <NavLink to='banhmi'>
+                                <FaRegArrowAltCircleRight className='icon' size="70px" color='#BC8F5A'/>
+                            </NavLink>
+                            
                         </div>
                         <ul>
                             <li>The Mekong (Grilled Pork)</li>
@@ -181,7 +187,10 @@ export function MenuRoot(props) {
                     <div className='menu-chunk'>
                         <div className='d-flex justify-content-between'>
                             <NavLink to='bowls'><h2>RICE + SALAD BOWL</h2></NavLink>
-                            <span>2</span>
+                            {/* <span>2</span> */}
+                            <NavLink to='bowls'>
+                                <FaRegArrowAltCircleRight className='icon' size="70px" color='#BC8F5A'/>
+                            </NavLink>
                         </div>
                         <ul>
                             <li>Grilled Pork Bowl</li>
@@ -193,7 +202,10 @@ export function MenuRoot(props) {
                     <div className='menu-chunk'>
                         <div className='d-flex justify-content-between'>
                             <NavLink to='drinks'><h2>DRINKS</h2></NavLink>
-                            <span>3</span>
+                            {/* <span>3</span> */}
+                            <NavLink to='drinks'>
+                                <FaRegArrowAltCircleRight className='icon' size="70px" color='#BC8F5A'/>
+                            </NavLink>
                         </div>
                         <ul>
                             <li>Taro Oreo</li>

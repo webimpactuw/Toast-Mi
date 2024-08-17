@@ -191,13 +191,11 @@ p {
   height: 250px;
 }
 
-
-
 .menu-chunk h2 {
   font-family: 'Baloo Bhai 2';
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 81px;
   text-decoration-line: underline;
   color: #BC8F5A;
